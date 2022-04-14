@@ -1,0 +1,11 @@
+[
+  { "text": "صفحه نخست", "link": "./index.html" },
+  { "text": "نوشیدنی ها", "link": "./productsList.html" },
+  { "text": "تنقلات", "link": "./productsList.html" },
+  { "text": "لوازم تهیه نوشیدنی", "link": "./productsList.html" },
+  { "text": "لوازم جانبی", "link": "./productsList.html" },
+  { "text": "کادویی", "link": "./productsList.html" },
+  { "text": "اخبار و آموزش", "link": "./productsList.html" },
+  { "text": "تعمیرات قهوه ساز", "link": "./productsList.html" },
+  { "text": "رزرو میز در کافه ترانه", "link": "./productsList.html" }
+]

@@ -1,0 +1,75 @@
+@import "~bootstrap/scss/bootstrap";
+@import "./index.scss";
+button {
+  background-color: transparent;
+  border: transparent;
+  cursor: pointer;
+}
+.page-num-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem auto;
+}
+.page-num-btn-container button {
+  font-family: iransansnum;
+  /* background-color: transparent; */
+  border: transparent;
+}
+.page-num-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 0.8rem;
+  border-radius: 5px;
+  width: 1rem;
+  height: 1rem;
+  color: white;
+  background-color: royalblue;
+}
+.prev-btn i,
+.next-btn i {
+  background-color: transparent;
+  font-size: 2rem;
+}
+.page-num-btn-container .active {
+  background-color: tomato;
+}
+.sorting {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.sorting span {
+  font-size: 17px;
+  margin-left: 1rem;
+}
+.sorting ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  list-style-type: none;
+}
+.sorting li {
+  display: inline;
+  padding: 0.1rem 1rem;
+  border-radius: 8px;
+}
+.sorting li:hover {
+  cursor: pointer;
+  background-color: whitesmoke;
+  /* color: white; */
+}
+.sorting .active {
+  background-color: steelblue;
+  color: white;
+}
+.sorting::after {
+  width: 95vw;
+  display: block;
+  content: "";
+  border-bottom: 0.1px solid thistle;
+  margin: 0.5rem auto;
+}
