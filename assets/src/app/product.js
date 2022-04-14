@@ -1,3 +1,5 @@
+import { windowLoad } from "../main.js";
+windowLoad();
 function setupTabs() {
   const btns = document.querySelectorAll(".p-down-title");
   const tabs = document.querySelectorAll(".down-tab");

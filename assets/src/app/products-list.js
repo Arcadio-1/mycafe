@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-import "bootstrap";
+// import "bootstrap";
 import { windowLoad } from "../main.js";
 import { pagination } from "./productsListIn/pagination.js";
 import { displayButtons } from "./productsListIn/displayButtons";

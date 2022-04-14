@@ -10,6 +10,8 @@ module.exports = {
     indexStyles: "./assets/src/css/index.scss",
     prodListjs: "./assets/src/app/products-list.js",
     prodListStyles: "./assets/src/css/products-list.scss",
+    productjs: "./assets/src/app/product.js",
+    productStyles: "./assets/src/css/product.scss",
   },
   module: {
     rules: [
