@@ -21,7 +21,6 @@ export const tagolmenu = () => {
   window.addEventListener(
     "resize",
     () => {
-      console.log("fuck");
       const linkContainerClientRect = menuLinksContiner.getBoundingClientRect();
       if (linkContainerClientRect.width > 830) {
         return (menuLinksContiner.style.height = "25px");

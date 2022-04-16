@@ -8,9 +8,16 @@
     "description": "مولتی کافه تندرستی در کنار شماست تا در راه رسیدن به تندرستی، سلامتی و تناسب اندام همراهیتان کند. مولتی کافه تندرستی، قهوه ی سبزِ فوریِ 100% خالص است. قهوه سبز سرشار از اسید کلروژنیک است که باعث افزایش متابولیسم ، کاهش وزن و چربی سوزی به شکل طبیعی و سالم می شود. دانه سبز قهوه، هسته سبز رنگ میوه قهوه است که هنوز برشته نشده است. فرآیند برشته سازی دانه قهوه باعث از بین رفتن میزان قابل توجهی از اسید کلروژنیک و تغییر در آنتی اکسیدان ها ، کافئین و ... می شود. بنابراین قهوه سبز سرشار از مزیت های بیشمار برای تندرستی است. قهوه ی سبزِ فوریِ مولتی کافه تندرستی، با تکنولوژی انحصاری صنایع غذایی مولتی در فرایندی به خصوص عصاره گیری شده و به شکل پودر فوری 100% خالص درآمده است. که به راحتی با اضافه کردن آب جوش آماده می شود. در مقایسه با محصولات مشابه قهوه سبز مولتی کافه تندرستی نیاز به آسیاب کردن دانه های قهوه و دم آوری طولانی با اثربخشی جزئی ندارد. برای اطلاع از خواص بیشتر محصول به بروشور داخل جعبه مراجعه فرمایید. ",
     "link": "./product.html",
     "imageLink": "./assets/src/image/products/all-products-img/1 (1).jpg",
+
     "contentLanguage": "fr",
     "targetCountry": "IR",
-    "channel": "online",
+    "imgList": [
+      "./assets/src/image/products/all-products-img/1 (1).jpg",
+      "./assets/src/image/products/small/s1.jpg",
+      "./assets/src/image/products/small/s2.jpg",
+      "./assets/src/image/products/small/s3.jpg",
+      "./assets/src/image/products/small/s4.jpg"
+    ],
     "ageGroup": "adult",
     "availability": "in stock",
     "availabilityDate": "2019-01-25T13:00:00-08:00",
@@ -34,7 +41,7 @@
   },
   {
     "kind": "drink",
-    "id": "d1",
+    "id": "d2",
     "offerId": "d1",
     "source": "api",
     "title": "قهوه سبز فوری مولتی کافه تندرستی - 30 ساشه 2 گرمی",
@@ -43,7 +50,13 @@
     "imageLink": "./assets/src/image/products/all-products-img/1 (2).jpg",
     "contentLanguage": "fr",
     "targetCountry": "IR",
-    "channel": "online",
+    "imgList": [
+      "./assets/src/image/products/all-products-img/1 (1).jpg",
+      "./assets/src/image/products/small/s1.jpg",
+      "./assets/src/image/products/small/s2.jpg",
+      "./assets/src/image/products/small/s3.jpg",
+      "./assets/src/image/products/small/s4.jpg"
+    ],
     "ageGroup": "adult",
     "availability": "in stock",
     "availabilityDate": "2019-01-25T13:00:00-08:00",
@@ -67,7 +80,7 @@
   },
   {
     "kind": "drink",
-    "id": "d1",
+    "id": "d3",
     "offerId": "d1",
     "source": "api",
     "title": "قهوه سبز فوری مولتی کافه تندرستی - 30 ساشه 2 گرمی",
@@ -76,7 +89,13 @@
     "imageLink": "./assets/src/image/products/all-products-img/1 (3).jpg",
     "contentLanguage": "fr",
     "targetCountry": "IR",
-    "channel": "online",
+    "imgList": [
+      "./assets/src/image/products/all-products-img/1 (1).jpg",
+      "./assets/src/image/products/small/s1.jpg",
+      "./assets/src/image/products/small/s2.jpg",
+      "./assets/src/image/products/small/s3.jpg",
+      "./assets/src/image/products/small/s4.jpg"
+    ],
     "ageGroup": "adult",
     "availability": "in stock",
     "availabilityDate": "2019-01-25T13:00:00-08:00",
@@ -100,7 +119,7 @@
   },
   {
     "kind": "drink",
-    "id": "d1",
+    "id": "d4",
     "offerId": "d1",
     "source": "api",
     "title": "قهوه سبز فوری مولتی کافه تندرستی - 30 ساشه 2 گرمی",
@@ -109,7 +128,13 @@
     "imageLink": "./assets/src/image/products/all-products-img/1 (4).jpg",
     "contentLanguage": "fr",
     "targetCountry": "IR",
-    "channel": "online",
+    "imgList": [
+      "./assets/src/image/products/all-products-img/1 (1).jpg",
+      "./assets/src/image/products/small/s1.jpg",
+      "./assets/src/image/products/small/s2.jpg",
+      "./assets/src/image/products/small/s3.jpg",
+      "./assets/src/image/products/small/s4.jpg"
+    ],
     "ageGroup": "adult",
     "availability": "in stock",
     "availabilityDate": "2019-01-25T13:00:00-08:00",
@@ -133,7 +158,7 @@
   },
   {
     "kind": "drink",
-    "id": "d1",
+    "id": "d5",
     "offerId": "d1",
     "source": "api",
     "title": "قهوه سبز فوری مولتی کافه تندرستی - 30 ساشه 2 گرمی",
@@ -142,7 +167,13 @@
     "imageLink": "./assets/src/image/products/all-products-img/1 (5).jpg",
     "contentLanguage": "fr",
     "targetCountry": "IR",
-    "channel": "online",
+    "imgList": [
+      "./assets/src/image/products/all-products-img/1 (1).jpg",
+      "./assets/src/image/products/small/s1.jpg",
+      "./assets/src/image/products/small/s2.jpg",
+      "./assets/src/image/products/small/s3.jpg",
+      "./assets/src/image/products/small/s4.jpg"
+    ],
     "ageGroup": "adult",
     "availability": "in stock",
     "availabilityDate": "2019-01-25T13:00:00-08:00",
@@ -166,7 +197,7 @@
   },
   {
     "kind": "drink",
-    "id": "d1",
+    "id": "d6",
     "offerId": "d1",
     "source": "api",
     "title": "قهوه سبز فوری مولتی کافه تندرستی - 30 ساشه 2 گرمی",
@@ -175,7 +206,13 @@
     "imageLink": "./assets/src/image/products/all-products-img/1 (6).jpg",
     "contentLanguage": "fr",
     "targetCountry": "IR",
-    "channel": "online",
+    "imgList": [
+      "./assets/src/image/products/all-products-img/1 (1).jpg",
+      "./assets/src/image/products/small/s1.jpg",
+      "./assets/src/image/products/small/s2.jpg",
+      "./assets/src/image/products/small/s3.jpg",
+      "./assets/src/image/products/small/s4.jpg"
+    ],
     "ageGroup": "adult",
     "availability": "in stock",
     "availabilityDate": "2019-01-25T13:00:00-08:00",
@@ -199,7 +236,7 @@
   },
   {
     "kind": "drink",
-    "id": "d1",
+    "id": "d7",
     "offerId": "d1",
     "source": "api",
     "title": "قهوه سبز فوری مولتی کافه تندرستی - 30 ساشه 2 گرمی",
@@ -208,7 +245,13 @@
     "imageLink": "./assets/src/image/products/all-products-img/1 (7).jpg",
     "contentLanguage": "fr",
     "targetCountry": "IR",
-    "channel": "online",
+    "imgList": [
+      "./assets/src/image/products/all-products-img/1 (1).jpg",
+      "./assets/src/image/products/small/s1.jpg",
+      "./assets/src/image/products/small/s2.jpg",
+      "./assets/src/image/products/small/s3.jpg",
+      "./assets/src/image/products/small/s4.jpg"
+    ],
     "ageGroup": "adult",
     "availability": "in stock",
     "availabilityDate": "2019-01-25T13:00:00-08:00",
@@ -232,7 +275,7 @@
   },
   {
     "kind": "drink",
-    "id": "d1",
+    "id": "d8",
     "offerId": "d1",
     "source": "api",
     "title": "قهوه سبز فوری مولتی کافه تندرستی - 30 ساشه 2 گرمی",
@@ -241,7 +284,13 @@
     "imageLink": "./assets/src/image/products/all-products-img/1 (8).jpg",
     "contentLanguage": "fr",
     "targetCountry": "IR",
-    "channel": "online",
+    "imgList": [
+      "./assets/src/image/products/all-products-img/1 (1).jpg",
+      "./assets/src/image/products/small/s1.jpg",
+      "./assets/src/image/products/small/s2.jpg",
+      "./assets/src/image/products/small/s3.jpg",
+      "./assets/src/image/products/small/s4.jpg"
+    ],
     "ageGroup": "adult",
     "availability": "in stock",
     "availabilityDate": "2019-01-25T13:00:00-08:00",
@@ -265,7 +314,7 @@
   },
   {
     "kind": "drink",
-    "id": "d1",
+    "id": "d9",
     "offerId": "d1",
     "source": "api",
     "title": "قهوه سبز فوری مولتی کافه تندرستی - 30 ساشه 2 گرمی",
@@ -274,7 +323,13 @@
     "imageLink": "./assets/src/image/products/all-products-img/1 (8).jpg",
     "contentLanguage": "fr",
     "targetCountry": "IR",
-    "channel": "online",
+    "imgList": [
+      "./assets/src/image/products/all-products-img/1 (1).jpg",
+      "./assets/src/image/products/small/s1.jpg",
+      "./assets/src/image/products/small/s2.jpg",
+      "./assets/src/image/products/small/s3.jpg",
+      "./assets/src/image/products/small/s4.jpg"
+    ],
     "ageGroup": "adult",
     "availability": "in stock",
     "availabilityDate": "2019-01-25T13:00:00-08:00",
@@ -298,7 +353,7 @@
   },
   {
     "kind": "drink",
-    "id": "d1",
+    "id": "d10",
     "offerId": "d1",
     "source": "api",
     "title": "قهوه سبز فوری مولتی کافه تندرستی - 30 ساشه 2 گرمی",
@@ -307,7 +362,13 @@
     "imageLink": "./assets/src/image/products/all-products-img/1 (9).jpg",
     "contentLanguage": "fr",
     "targetCountry": "IR",
-    "channel": "online",
+    "imgList": [
+      "./assets/src/image/products/all-products-img/1 (1).jpg",
+      "./assets/src/image/products/small/s1.jpg",
+      "./assets/src/image/products/small/s2.jpg",
+      "./assets/src/image/products/small/s3.jpg",
+      "./assets/src/image/products/small/s4.jpg"
+    ],
     "ageGroup": "adult",
     "availability": "in stock",
     "availabilityDate": "2019-01-25T13:00:00-08:00",
@@ -331,7 +392,7 @@
   },
   {
     "kind": "drink",
-    "id": "d1",
+    "id": "d11",
     "offerId": "d1",
     "source": "api",
     "title": "قهوه سبز فوری مولتی کافه تندرستی - 30 ساشه 2 گرمی",
@@ -340,7 +401,13 @@
     "imageLink": "./assets/src/image/products/all-products-img/1 (10).jpg",
     "contentLanguage": "fr",
     "targetCountry": "IR",
-    "channel": "online",
+    "imgList": [
+      "./assets/src/image/products/all-products-img/1 (1).jpg",
+      "./assets/src/image/products/small/s1.jpg",
+      "./assets/src/image/products/small/s2.jpg",
+      "./assets/src/image/products/small/s3.jpg",
+      "./assets/src/image/products/small/s4.jpg"
+    ],
     "ageGroup": "adult",
     "availability": "in stock",
     "availabilityDate": "2019-01-25T13:00:00-08:00",
@@ -364,7 +431,7 @@
   },
   {
     "kind": "drink",
-    "id": "d1",
+    "id": "d12",
     "offerId": "d1",
     "source": "api",
     "title": "قهوه سبز فوری مولتی کافه تندرستی - 30 ساشه 2 گرمی",
@@ -373,7 +440,13 @@
     "imageLink": "./assets/src/image/products/all-products-img/1 (11).jpg",
     "contentLanguage": "fr",
     "targetCountry": "IR",
-    "channel": "online",
+    "imgList": [
+      "./assets/src/image/products/all-products-img/1 (1).jpg",
+      "./assets/src/image/products/small/s1.jpg",
+      "./assets/src/image/products/small/s2.jpg",
+      "./assets/src/image/products/small/s3.jpg",
+      "./assets/src/image/products/small/s4.jpg"
+    ],
     "ageGroup": "adult",
     "availability": "in stock",
     "availabilityDate": "2019-01-25T13:00:00-08:00",
@@ -397,7 +470,7 @@
   },
   {
     "kind": "drink",
-    "id": "d1",
+    "id": "d13",
     "offerId": "d1",
     "source": "api",
     "title": "قهوه سبز فوری مولتی کافه تندرستی - 30 ساشه 2 گرمی",
@@ -406,7 +479,13 @@
     "imageLink": "./assets/src/image/products/all-products-img/1 (12).jpg",
     "contentLanguage": "fr",
     "targetCountry": "IR",
-    "channel": "online",
+    "imgList": [
+      "./assets/src/image/products/all-products-img/1 (1).jpg",
+      "./assets/src/image/products/small/s1.jpg",
+      "./assets/src/image/products/small/s2.jpg",
+      "./assets/src/image/products/small/s3.jpg",
+      "./assets/src/image/products/small/s4.jpg"
+    ],
     "ageGroup": "adult",
     "availability": "in stock",
     "availabilityDate": "2019-01-25T13:00:00-08:00",
@@ -430,7 +509,7 @@
   },
   {
     "kind": "drink",
-    "id": "d1",
+    "id": "d14",
     "offerId": "d1",
     "source": "api",
     "title": "قهوه سبز فوری مولتی کافه تندرستی - 30 ساشه 2 گرمی",
@@ -439,7 +518,13 @@
     "imageLink": "./assets/src/image/products/all-products-img/1 (13).jpg",
     "contentLanguage": "fr",
     "targetCountry": "IR",
-    "channel": "online",
+    "imgList": [
+      "./assets/src/image/products/all-products-img/1 (1).jpg",
+      "./assets/src/image/products/small/s1.jpg",
+      "./assets/src/image/products/small/s2.jpg",
+      "./assets/src/image/products/small/s3.jpg",
+      "./assets/src/image/products/small/s4.jpg"
+    ],
     "ageGroup": "adult",
     "availability": "in stock",
     "availabilityDate": "2019-01-25T13:00:00-08:00",
@@ -463,7 +548,7 @@
   },
   {
     "kind": "drink",
-    "id": "d1",
+    "id": "d15",
     "offerId": "d1",
     "source": "api",
     "title": "قهوه سبز فوری مولتی کافه تندرستی - 30 ساشه 2 گرمی",
@@ -472,7 +557,13 @@
     "imageLink": "./assets/src/image/products/all-products-img/1 (14).jpg",
     "contentLanguage": "fr",
     "targetCountry": "IR",
-    "channel": "online",
+    "imgList": [
+      "./assets/src/image/products/all-products-img/1 (1).jpg",
+      "./assets/src/image/products/small/s1.jpg",
+      "./assets/src/image/products/small/s2.jpg",
+      "./assets/src/image/products/small/s3.jpg",
+      "./assets/src/image/products/small/s4.jpg"
+    ],
     "ageGroup": "adult",
     "availability": "in stock",
     "availabilityDate": "2019-01-25T13:00:00-08:00",
@@ -496,7 +587,7 @@
   },
   {
     "kind": "drink",
-    "id": "d1",
+    "id": "d16",
     "offerId": "d1",
     "source": "api",
     "title": "قهوه سبز فوری مولتی کافه تندرستی - 30 ساشه 2 گرمی",
@@ -505,7 +596,13 @@
     "imageLink": "./assets/src/image/products/all-products-img/1 (15).jpg",
     "contentLanguage": "fr",
     "targetCountry": "IR",
-    "channel": "online",
+    "imgList": [
+      "./assets/src/image/products/all-products-img/1 (1).jpg",
+      "./assets/src/image/products/small/s1.jpg",
+      "./assets/src/image/products/small/s2.jpg",
+      "./assets/src/image/products/small/s3.jpg",
+      "./assets/src/image/products/small/s4.jpg"
+    ],
     "ageGroup": "adult",
     "availability": "in stock",
     "availabilityDate": "2019-01-25T13:00:00-08:00",
@@ -529,7 +626,7 @@
   },
   {
     "kind": "drink",
-    "id": "d1",
+    "id": "d17",
     "offerId": "d1",
     "source": "api",
     "title": "قهوه سبز فوری مولتی کافه تندرستی - 30 ساشه 2 گرمی",
@@ -538,7 +635,13 @@
     "imageLink": "./assets/src/image/products/all-products-img/1 (16).jpg",
     "contentLanguage": "fr",
     "targetCountry": "IR",
-    "channel": "online",
+    "imgList": [
+      "./assets/src/image/products/all-products-img/1 (1).jpg",
+      "./assets/src/image/products/small/s1.jpg",
+      "./assets/src/image/products/small/s2.jpg",
+      "./assets/src/image/products/small/s3.jpg",
+      "./assets/src/image/products/small/s4.jpg"
+    ],
     "ageGroup": "adult",
     "availability": "in stock",
     "availabilityDate": "2019-01-25T13:00:00-08:00",
@@ -562,7 +665,7 @@
   },
   {
     "kind": "drink",
-    "id": "d1",
+    "id": "d18",
     "offerId": "d1",
     "source": "api",
     "title": "قهوه سبز فوری مولتی کافه تندرستی - 30 ساشه 2 گرمی",
@@ -571,7 +674,13 @@
     "imageLink": "./assets/src/image/products/all-products-img/1 (17).jpg",
     "contentLanguage": "fr",
     "targetCountry": "IR",
-    "channel": "online",
+    "imgList": [
+      "./assets/src/image/products/all-products-img/1 (1).jpg",
+      "./assets/src/image/products/small/s1.jpg",
+      "./assets/src/image/products/small/s2.jpg",
+      "./assets/src/image/products/small/s3.jpg",
+      "./assets/src/image/products/small/s4.jpg"
+    ],
     "ageGroup": "adult",
     "availability": "in stock",
     "availabilityDate": "2019-01-25T13:00:00-08:00",
@@ -595,7 +704,7 @@
   },
   {
     "kind": "drink",
-    "id": "d1",
+    "id": "d19",
     "offerId": "d1",
     "source": "api",
     "title": "قهوه سبز فوری مولتی کافه تندرستی - 30 ساشه 2 گرمی",
@@ -604,7 +713,13 @@
     "imageLink": "./assets/src/image/products/all-products-img/1 (18).jpg",
     "contentLanguage": "fr",
     "targetCountry": "IR",
-    "channel": "online",
+    "imgList": [
+      "./assets/src/image/products/all-products-img/1 (1).jpg",
+      "./assets/src/image/products/small/s1.jpg",
+      "./assets/src/image/products/small/s2.jpg",
+      "./assets/src/image/products/small/s3.jpg",
+      "./assets/src/image/products/small/s4.jpg"
+    ],
     "ageGroup": "adult",
     "availability": "in stock",
     "availabilityDate": "2019-01-25T13:00:00-08:00",
@@ -628,7 +743,7 @@
   },
   {
     "kind": "drink",
-    "id": "d1",
+    "id": "d20",
     "offerId": "d1",
     "source": "api",
     "title": "قهوه سبز فوری مولتی کافه تندرستی - 30 ساشه 2 گرمی",
@@ -637,7 +752,13 @@
     "imageLink": "./assets/src/image/products/all-products-img/1 (19).jpg",
     "contentLanguage": "fr",
     "targetCountry": "IR",
-    "channel": "online",
+    "imgList": [
+      "./assets/src/image/products/all-products-img/1 (1).jpg",
+      "./assets/src/image/products/small/s1.jpg",
+      "./assets/src/image/products/small/s2.jpg",
+      "./assets/src/image/products/small/s3.jpg",
+      "./assets/src/image/products/small/s4.jpg"
+    ],
     "ageGroup": "adult",
     "availability": "in stock",
     "availabilityDate": "2019-01-25T13:00:00-08:00",
@@ -661,7 +782,7 @@
   },
   {
     "kind": "drink",
-    "id": "d1",
+    "id": "d21",
     "offerId": "d1",
     "source": "api",
     "title": "قهوه سبز فوری مولتی کافه تندرستی - 30 ساشه 2 گرمی",
@@ -670,7 +791,13 @@
     "imageLink": "./assets/src/image/products/all-products-img/1 (20).jpg",
     "contentLanguage": "fr",
     "targetCountry": "IR",
-    "channel": "online",
+    "imgList": [
+      "./assets/src/image/products/all-products-img/1 (1).jpg",
+      "./assets/src/image/products/small/s1.jpg",
+      "./assets/src/image/products/small/s2.jpg",
+      "./assets/src/image/products/small/s3.jpg",
+      "./assets/src/image/products/small/s4.jpg"
+    ],
     "ageGroup": "adult",
     "availability": "in stock",
     "availabilityDate": "2019-01-25T13:00:00-08:00",
@@ -694,7 +821,7 @@
   },
   {
     "kind": "drink",
-    "id": "d1",
+    "id": "d22",
     "offerId": "d1",
     "source": "api",
     "title": "قهوه سبز فوری مولتی کافه تندرستی - 30 ساشه 2 گرمی",
@@ -703,7 +830,13 @@
     "imageLink": "./assets/src/image/products/all-products-img/1 (21).jpg",
     "contentLanguage": "fr",
     "targetCountry": "IR",
-    "channel": "online",
+    "imgList": [
+      "./assets/src/image/products/all-products-img/1 (1).jpg",
+      "./assets/src/image/products/small/s1.jpg",
+      "./assets/src/image/products/small/s2.jpg",
+      "./assets/src/image/products/small/s3.jpg",
+      "./assets/src/image/products/small/s4.jpg"
+    ],
     "ageGroup": "adult",
     "availability": "in stock",
     "availabilityDate": "2019-01-25T13:00:00-08:00",
@@ -727,7 +860,7 @@
   },
   {
     "kind": "drink",
-    "id": "d1",
+    "id": "d23",
     "offerId": "d1",
     "source": "api",
     "title": "قهوه سبز فوری مولتی کافه تندرستی - 30 ساشه 2 گرمی",
@@ -736,7 +869,13 @@
     "imageLink": "./assets/src/image/products/all-products-img/1 (22).jpg",
     "contentLanguage": "fr",
     "targetCountry": "IR",
-    "channel": "online",
+    "imgList": [
+      "./assets/src/image/products/all-products-img/1 (1).jpg",
+      "./assets/src/image/products/small/s1.jpg",
+      "./assets/src/image/products/small/s2.jpg",
+      "./assets/src/image/products/small/s3.jpg",
+      "./assets/src/image/products/small/s4.jpg"
+    ],
     "ageGroup": "adult",
     "availability": "in stock",
     "availabilityDate": "2019-01-25T13:00:00-08:00",
@@ -760,7 +899,7 @@
   },
   {
     "kind": "drink",
-    "id": "d1",
+    "id": "d24",
     "offerId": "d1",
     "source": "api",
     "title": "قهوه سبز فوری مولتی کافه تندرستی - 30 ساشه 2 گرمی",
@@ -769,7 +908,13 @@
     "imageLink": "./assets/src/image/products/all-products-img/1 (23).jpg",
     "contentLanguage": "fr",
     "targetCountry": "IR",
-    "channel": "online",
+    "imgList": [
+      "./assets/src/image/products/all-products-img/1 (1).jpg",
+      "./assets/src/image/products/small/s1.jpg",
+      "./assets/src/image/products/small/s2.jpg",
+      "./assets/src/image/products/small/s3.jpg",
+      "./assets/src/image/products/small/s4.jpg"
+    ],
     "ageGroup": "adult",
     "availability": "in stock",
     "availabilityDate": "2019-01-25T13:00:00-08:00",
@@ -793,7 +938,7 @@
   },
   {
     "kind": "drink",
-    "id": "d1",
+    "id": "d25",
     "offerId": "d1",
     "source": "api",
     "title": "قهوه سبز فوری مولتی کافه تندرستی - 30 ساشه 2 گرمی",
@@ -802,7 +947,13 @@
     "imageLink": "./assets/src/image/products/all-products-img/1 (24).jpg",
     "contentLanguage": "fr",
     "targetCountry": "IR",
-    "channel": "online",
+    "imgList": [
+      "./assets/src/image/products/all-products-img/1 (1).jpg",
+      "./assets/src/image/products/small/s1.jpg",
+      "./assets/src/image/products/small/s2.jpg",
+      "./assets/src/image/products/small/s3.jpg",
+      "./assets/src/image/products/small/s4.jpg"
+    ],
     "ageGroup": "adult",
     "availability": "in stock",
     "availabilityDate": "2019-01-25T13:00:00-08:00",
@@ -826,7 +977,7 @@
   },
   {
     "kind": "drink",
-    "id": "d1",
+    "id": "d26",
     "offerId": "d1",
     "source": "api",
     "title": "قهوه سبز فوری مولتی کافه تندرستی - 30 ساشه 2 گرمی",
@@ -835,7 +986,13 @@
     "imageLink": "./assets/src/image/products/all-products-img/1 (25).jpg",
     "contentLanguage": "fr",
     "targetCountry": "IR",
-    "channel": "online",
+    "imgList": [
+      "./assets/src/image/products/all-products-img/1 (1).jpg",
+      "./assets/src/image/products/small/s1.jpg",
+      "./assets/src/image/products/small/s2.jpg",
+      "./assets/src/image/products/small/s3.jpg",
+      "./assets/src/image/products/small/s4.jpg"
+    ],
     "ageGroup": "adult",
     "availability": "in stock",
     "availabilityDate": "2019-01-25T13:00:00-08:00",
@@ -859,7 +1016,7 @@
   },
   {
     "kind": "drink",
-    "id": "d1",
+    "id": "d27",
     "offerId": "d1",
     "source": "api",
     "title": "قهوه سبز فوری مولتی کافه تندرستی - 30 ساشه 2 گرمی",
@@ -868,7 +1025,13 @@
     "imageLink": "./assets/src/image/products/all-products-img/1 (26).jpg",
     "contentLanguage": "fr",
     "targetCountry": "IR",
-    "channel": "online",
+    "imgList": [
+      "./assets/src/image/products/all-products-img/1 (1).jpg",
+      "./assets/src/image/products/small/s1.jpg",
+      "./assets/src/image/products/small/s2.jpg",
+      "./assets/src/image/products/small/s3.jpg",
+      "./assets/src/image/products/small/s4.jpg"
+    ],
     "ageGroup": "adult",
     "availability": "in stock",
     "availabilityDate": "2019-01-25T13:00:00-08:00",
@@ -892,7 +1055,7 @@
   },
   {
     "kind": "drink",
-    "id": "d1",
+    "id": "d28",
     "offerId": "d1",
     "source": "api",
     "title": "قهوه سبز فوری مولتی کافه تندرستی - 30 ساشه 2 گرمی",
@@ -901,7 +1064,13 @@
     "imageLink": "./assets/src/image/products/all-products-img/1 (27).jpg",
     "contentLanguage": "fr",
     "targetCountry": "IR",
-    "channel": "online",
+    "imgList": [
+      "./assets/src/image/products/all-products-img/1 (1).jpg",
+      "./assets/src/image/products/small/s1.jpg",
+      "./assets/src/image/products/small/s2.jpg",
+      "./assets/src/image/products/small/s3.jpg",
+      "./assets/src/image/products/small/s4.jpg"
+    ],
     "ageGroup": "adult",
     "availability": "in stock",
     "availabilityDate": "2019-01-25T13:00:00-08:00",
@@ -925,7 +1094,7 @@
   },
   {
     "kind": "drink",
-    "id": "d1",
+    "id": "d29",
     "offerId": "d1",
     "source": "api",
     "title": "قهوه سبز فوری مولتی کافه تندرستی - 30 ساشه 2 گرمی",
@@ -934,7 +1103,13 @@
     "imageLink": "./assets/src/image/products/all-products-img/1 (28).jpg",
     "contentLanguage": "fr",
     "targetCountry": "IR",
-    "channel": "online",
+    "imgList": [
+      "./assets/src/image/products/all-products-img/1 (1).jpg",
+      "./assets/src/image/products/small/s1.jpg",
+      "./assets/src/image/products/small/s2.jpg",
+      "./assets/src/image/products/small/s3.jpg",
+      "./assets/src/image/products/small/s4.jpg"
+    ],
     "ageGroup": "adult",
     "availability": "in stock",
     "availabilityDate": "2019-01-25T13:00:00-08:00",
@@ -958,7 +1133,7 @@
   },
   {
     "kind": "drink",
-    "id": "d1",
+    "id": "d30",
     "offerId": "d1",
     "source": "api",
     "title": "قهوه سبز فوری مولتی کافه تندرستی - 30 ساشه 2 گرمی",
@@ -967,7 +1142,13 @@
     "imageLink": "./assets/src/image/products/all-products-img/1 (29).jpg",
     "contentLanguage": "fr",
     "targetCountry": "IR",
-    "channel": "online",
+    "imgList": [
+      "./assets/src/image/products/all-products-img/1 (1).jpg",
+      "./assets/src/image/products/small/s1.jpg",
+      "./assets/src/image/products/small/s2.jpg",
+      "./assets/src/image/products/small/s3.jpg",
+      "./assets/src/image/products/small/s4.jpg"
+    ],
     "ageGroup": "adult",
     "availability": "in stock",
     "availabilityDate": "2019-01-25T13:00:00-08:00",
@@ -991,7 +1172,7 @@
   },
   {
     "kind": "drink",
-    "id": "d1",
+    "id": "d31",
     "offerId": "d1",
     "source": "api",
     "title": "قهوه سبز فوری مولتی کافه تندرستی - 30 ساشه 2 گرمی",
@@ -1000,7 +1181,13 @@
     "imageLink": "./assets/src/image/products/all-products-img/1 (1).jpg",
     "contentLanguage": "fr",
     "targetCountry": "IR",
-    "channel": "online",
+    "imgList": [
+      "./assets/src/image/products/all-products-img/1 (1).jpg",
+      "./assets/src/image/products/small/s1.jpg",
+      "./assets/src/image/products/small/s2.jpg",
+      "./assets/src/image/products/small/s3.jpg",
+      "./assets/src/image/products/small/s4.jpg"
+    ],
     "ageGroup": "adult",
     "availability": "in stock",
     "availabilityDate": "2019-01-25T13:00:00-08:00",
@@ -1024,7 +1211,7 @@
   },
   {
     "kind": "drink",
-    "id": "d1",
+    "id": "d32",
     "offerId": "d1",
     "source": "api",
     "title": "قهوه سبز فوری مولتی کافه تندرستی - 30 ساشه 2 گرمی",
@@ -1033,7 +1220,13 @@
     "imageLink": "./assets/src/image/products/all-products-img/1 (2).jpg",
     "contentLanguage": "fr",
     "targetCountry": "IR",
-    "channel": "online",
+    "imgList": [
+      "./assets/src/image/products/all-products-img/1 (1).jpg",
+      "./assets/src/image/products/small/s1.jpg",
+      "./assets/src/image/products/small/s2.jpg",
+      "./assets/src/image/products/small/s3.jpg",
+      "./assets/src/image/products/small/s4.jpg"
+    ],
     "ageGroup": "adult",
     "availability": "in stock",
     "availabilityDate": "2019-01-25T13:00:00-08:00",
@@ -1057,7 +1250,7 @@
   },
   {
     "kind": "drink",
-    "id": "d1",
+    "id": "d33",
     "offerId": "d1",
     "source": "api",
     "title": "قهوه سبز فوری مولتی کافه تندرستی - 30 ساشه 2 گرمی",
@@ -1066,7 +1259,13 @@
     "imageLink": "./assets/src/image/products/all-products-img/1 (3).jpg",
     "contentLanguage": "fr",
     "targetCountry": "IR",
-    "channel": "online",
+    "imgList": [
+      "./assets/src/image/products/all-products-img/1 (1).jpg",
+      "./assets/src/image/products/small/s1.jpg",
+      "./assets/src/image/products/small/s2.jpg",
+      "./assets/src/image/products/small/s3.jpg",
+      "./assets/src/image/products/small/s4.jpg"
+    ],
     "ageGroup": "adult",
     "availability": "in stock",
     "availabilityDate": "2019-01-25T13:00:00-08:00",
@@ -1090,7 +1289,7 @@
   },
   {
     "kind": "drink",
-    "id": "d1",
+    "id": "d34",
     "offerId": "d1",
     "source": "api",
     "title": "قهوه سبز فوری مولتی کافه تندرستی - 30 ساشه 2 گرمی",
@@ -1099,7 +1298,13 @@
     "imageLink": "./assets/src/image/products/all-products-img/1 (4).jpg",
     "contentLanguage": "fr",
     "targetCountry": "IR",
-    "channel": "online",
+    "imgList": [
+      "./assets/src/image/products/all-products-img/1 (1).jpg",
+      "./assets/src/image/products/small/s1.jpg",
+      "./assets/src/image/products/small/s2.jpg",
+      "./assets/src/image/products/small/s3.jpg",
+      "./assets/src/image/products/small/s4.jpg"
+    ],
     "ageGroup": "adult",
     "availability": "in stock",
     "availabilityDate": "2019-01-25T13:00:00-08:00",
@@ -1123,7 +1328,7 @@
   },
   {
     "kind": "drink",
-    "id": "d1",
+    "id": "d35",
     "offerId": "d1",
     "source": "api",
     "title": "قهوه سبز فوری مولتی کافه تندرستی - 30 ساشه 2 گرمی",
@@ -1132,7 +1337,13 @@
     "imageLink": "./assets/src/image/products/all-products-img/1 (5).jpg",
     "contentLanguage": "fr",
     "targetCountry": "IR",
-    "channel": "online",
+    "imgList": [
+      "./assets/src/image/products/all-products-img/1 (1).jpg",
+      "./assets/src/image/products/small/s1.jpg",
+      "./assets/src/image/products/small/s2.jpg",
+      "./assets/src/image/products/small/s3.jpg",
+      "./assets/src/image/products/small/s4.jpg"
+    ],
     "ageGroup": "adult",
     "availability": "in stock",
     "availabilityDate": "2019-01-25T13:00:00-08:00",
@@ -1156,7 +1367,7 @@
   },
   {
     "kind": "drink",
-    "id": "d1",
+    "id": "d36",
     "offerId": "d1",
     "source": "api",
     "title": "قهوه سبز فوری مولتی کافه تندرستی - 30 ساشه 2 گرمی",
@@ -1165,7 +1376,13 @@
     "imageLink": "./assets/src/image/products/all-products-img/1 (6).jpg",
     "contentLanguage": "fr",
     "targetCountry": "IR",
-    "channel": "online",
+    "imgList": [
+      "./assets/src/image/products/all-products-img/1 (1).jpg",
+      "./assets/src/image/products/small/s1.jpg",
+      "./assets/src/image/products/small/s2.jpg",
+      "./assets/src/image/products/small/s3.jpg",
+      "./assets/src/image/products/small/s4.jpg"
+    ],
     "ageGroup": "adult",
     "availability": "in stock",
     "availabilityDate": "2019-01-25T13:00:00-08:00",
@@ -1189,7 +1406,7 @@
   },
   {
     "kind": "drink",
-    "id": "d1",
+    "id": "d37",
     "offerId": "d1",
     "source": "api",
     "title": "قهوه سبز فوری مولتی کافه تندرستی - 30 ساشه 2 گرمی",
@@ -1198,7 +1415,13 @@
     "imageLink": "./assets/src/image/products/all-products-img/1 (7).jpg",
     "contentLanguage": "fr",
     "targetCountry": "IR",
-    "channel": "online",
+    "imgList": [
+      "./assets/src/image/products/all-products-img/1 (1).jpg",
+      "./assets/src/image/products/small/s1.jpg",
+      "./assets/src/image/products/small/s2.jpg",
+      "./assets/src/image/products/small/s3.jpg",
+      "./assets/src/image/products/small/s4.jpg"
+    ],
     "ageGroup": "adult",
     "availability": "in stock",
     "availabilityDate": "2019-01-25T13:00:00-08:00",
@@ -1222,7 +1445,7 @@
   },
   {
     "kind": "drink",
-    "id": "d1",
+    "id": "d38",
     "offerId": "d1",
     "source": "api",
     "title": "قهوه سبز فوری مولتی کافه تندرستی - 30 ساشه 2 گرمی",
@@ -1231,7 +1454,13 @@
     "imageLink": "./assets/src/image/products/all-products-img/1 (8).jpg",
     "contentLanguage": "fr",
     "targetCountry": "IR",
-    "channel": "online",
+    "imgList": [
+      "./assets/src/image/products/all-products-img/1 (1).jpg",
+      "./assets/src/image/products/small/s1.jpg",
+      "./assets/src/image/products/small/s2.jpg",
+      "./assets/src/image/products/small/s3.jpg",
+      "./assets/src/image/products/small/s4.jpg"
+    ],
     "ageGroup": "adult",
     "availability": "in stock",
     "availabilityDate": "2019-01-25T13:00:00-08:00",
@@ -1255,7 +1484,7 @@
   },
   {
     "kind": "drink",
-    "id": "d1",
+    "id": "d39",
     "offerId": "d1",
     "source": "api",
     "title": "قهوه سبز فوری مولتی کافه تندرستی - 30 ساشه 2 گرمی",
@@ -1264,7 +1493,13 @@
     "imageLink": "./assets/src/image/products/all-products-img/1 (8).jpg",
     "contentLanguage": "fr",
     "targetCountry": "IR",
-    "channel": "online",
+    "imgList": [
+      "./assets/src/image/products/all-products-img/1 (1).jpg",
+      "./assets/src/image/products/small/s1.jpg",
+      "./assets/src/image/products/small/s2.jpg",
+      "./assets/src/image/products/small/s3.jpg",
+      "./assets/src/image/products/small/s4.jpg"
+    ],
     "ageGroup": "adult",
     "availability": "in stock",
     "availabilityDate": "2019-01-25T13:00:00-08:00",
@@ -1288,7 +1523,7 @@
   },
   {
     "kind": "drink",
-    "id": "d1",
+    "id": "d40",
     "offerId": "d1",
     "source": "api",
     "title": "قهوه سبز فوری مولتی کافه تندرستی - 30 ساشه 2 گرمی",
@@ -1297,7 +1532,13 @@
     "imageLink": "./assets/src/image/products/all-products-img/1 (9).jpg",
     "contentLanguage": "fr",
     "targetCountry": "IR",
-    "channel": "online",
+    "imgList": [
+      "./assets/src/image/products/all-products-img/1 (1).jpg",
+      "./assets/src/image/products/small/s1.jpg",
+      "./assets/src/image/products/small/s2.jpg",
+      "./assets/src/image/products/small/s3.jpg",
+      "./assets/src/image/products/small/s4.jpg"
+    ],
     "ageGroup": "adult",
     "availability": "in stock",
     "availabilityDate": "2019-01-25T13:00:00-08:00",
@@ -1321,7 +1562,7 @@
   },
   {
     "kind": "drink",
-    "id": "d1",
+    "id": "d41",
     "offerId": "d1",
     "source": "api",
     "title": "قهوه سبز فوری مولتی کافه تندرستی - 30 ساشه 2 گرمی",
@@ -1330,7 +1571,13 @@
     "imageLink": "./assets/src/image/products/all-products-img/1 (10).jpg",
     "contentLanguage": "fr",
     "targetCountry": "IR",
-    "channel": "online",
+    "imgList": [
+      "./assets/src/image/products/all-products-img/1 (1).jpg",
+      "./assets/src/image/products/small/s1.jpg",
+      "./assets/src/image/products/small/s2.jpg",
+      "./assets/src/image/products/small/s3.jpg",
+      "./assets/src/image/products/small/s4.jpg"
+    ],
     "ageGroup": "adult",
     "availability": "in stock",
     "availabilityDate": "2019-01-25T13:00:00-08:00",
@@ -1354,7 +1601,7 @@
   },
   {
     "kind": "drink",
-    "id": "d1",
+    "id": "d42",
     "offerId": "d1",
     "source": "api",
     "title": "قهوه سبز فوری مولتی کافه تندرستی - 30 ساشه 2 گرمی",
@@ -1363,7 +1610,13 @@
     "imageLink": "./assets/src/image/products/all-products-img/1 (11).jpg",
     "contentLanguage": "fr",
     "targetCountry": "IR",
-    "channel": "online",
+    "imgList": [
+      "./assets/src/image/products/all-products-img/1 (1).jpg",
+      "./assets/src/image/products/small/s1.jpg",
+      "./assets/src/image/products/small/s2.jpg",
+      "./assets/src/image/products/small/s3.jpg",
+      "./assets/src/image/products/small/s4.jpg"
+    ],
     "ageGroup": "adult",
     "availability": "in stock",
     "availabilityDate": "2019-01-25T13:00:00-08:00",
@@ -1387,7 +1640,7 @@
   },
   {
     "kind": "drink",
-    "id": "d1",
+    "id": "d43",
     "offerId": "d1",
     "source": "api",
     "title": "قهوه سبز فوری مولتی کافه تندرستی - 30 ساشه 2 گرمی",
@@ -1396,7 +1649,13 @@
     "imageLink": "./assets/src/image/products/all-products-img/1 (12).jpg",
     "contentLanguage": "fr",
     "targetCountry": "IR",
-    "channel": "online",
+    "imgList": [
+      "./assets/src/image/products/all-products-img/1 (1).jpg",
+      "./assets/src/image/products/small/s1.jpg",
+      "./assets/src/image/products/small/s2.jpg",
+      "./assets/src/image/products/small/s3.jpg",
+      "./assets/src/image/products/small/s4.jpg"
+    ],
     "ageGroup": "adult",
     "availability": "in stock",
     "availabilityDate": "2019-01-25T13:00:00-08:00",
@@ -1420,7 +1679,7 @@
   },
   {
     "kind": "drink",
-    "id": "d1",
+    "id": "d44",
     "offerId": "d1",
     "source": "api",
     "title": "قهوه سبز فوری مولتی کافه تندرستی - 30 ساشه 2 گرمی",
@@ -1429,7 +1688,13 @@
     "imageLink": "./assets/src/image/products/all-products-img/1 (13).jpg",
     "contentLanguage": "fr",
     "targetCountry": "IR",
-    "channel": "online",
+    "imgList": [
+      "./assets/src/image/products/all-products-img/1 (1).jpg",
+      "./assets/src/image/products/small/s1.jpg",
+      "./assets/src/image/products/small/s2.jpg",
+      "./assets/src/image/products/small/s3.jpg",
+      "./assets/src/image/products/small/s4.jpg"
+    ],
     "ageGroup": "adult",
     "availability": "in stock",
     "availabilityDate": "2019-01-25T13:00:00-08:00",
@@ -1453,7 +1718,7 @@
   },
   {
     "kind": "drink",
-    "id": "d1",
+    "id": "d45",
     "offerId": "d1",
     "source": "api",
     "title": "قهوه سبز فوری مولتی کافه تندرستی - 30 ساشه 2 گرمی",
@@ -1462,7 +1727,13 @@
     "imageLink": "./assets/src/image/products/all-products-img/1 (14).jpg",
     "contentLanguage": "fr",
     "targetCountry": "IR",
-    "channel": "online",
+    "imgList": [
+      "./assets/src/image/products/all-products-img/1 (1).jpg",
+      "./assets/src/image/products/small/s1.jpg",
+      "./assets/src/image/products/small/s2.jpg",
+      "./assets/src/image/products/small/s3.jpg",
+      "./assets/src/image/products/small/s4.jpg"
+    ],
     "ageGroup": "adult",
     "availability": "in stock",
     "availabilityDate": "2019-01-25T13:00:00-08:00",
@@ -1486,7 +1757,7 @@
   },
   {
     "kind": "drink",
-    "id": "d1",
+    "id": "d46",
     "offerId": "d1",
     "source": "api",
     "title": "قهوه سبز فوری مولتی کافه تندرستی - 30 ساشه 2 گرمی",
@@ -1495,7 +1766,13 @@
     "imageLink": "./assets/src/image/products/all-products-img/1 (15).jpg",
     "contentLanguage": "fr",
     "targetCountry": "IR",
-    "channel": "online",
+    "imgList": [
+      "./assets/src/image/products/all-products-img/1 (1).jpg",
+      "./assets/src/image/products/small/s1.jpg",
+      "./assets/src/image/products/small/s2.jpg",
+      "./assets/src/image/products/small/s3.jpg",
+      "./assets/src/image/products/small/s4.jpg"
+    ],
     "ageGroup": "adult",
     "availability": "in stock",
     "availabilityDate": "2019-01-25T13:00:00-08:00",
@@ -1519,7 +1796,7 @@
   },
   {
     "kind": "drink",
-    "id": "d1",
+    "id": "d47",
     "offerId": "d1",
     "source": "api",
     "title": "قهوه سبز فوری مولتی کافه تندرستی - 30 ساشه 2 گرمی",
@@ -1528,7 +1805,13 @@
     "imageLink": "./assets/src/image/products/all-products-img/1 (16).jpg",
     "contentLanguage": "fr",
     "targetCountry": "IR",
-    "channel": "online",
+    "imgList": [
+      "./assets/src/image/products/all-products-img/1 (1).jpg",
+      "./assets/src/image/products/small/s1.jpg",
+      "./assets/src/image/products/small/s2.jpg",
+      "./assets/src/image/products/small/s3.jpg",
+      "./assets/src/image/products/small/s4.jpg"
+    ],
     "ageGroup": "adult",
     "availability": "in stock",
     "availabilityDate": "2019-01-25T13:00:00-08:00",
@@ -1552,7 +1835,7 @@
   },
   {
     "kind": "drink",
-    "id": "d1",
+    "id": "d48",
     "offerId": "d1",
     "source": "api",
     "title": "قهوه سبز فوری مولتی کافه تندرستی - 30 ساشه 2 گرمی",
@@ -1561,7 +1844,13 @@
     "imageLink": "./assets/src/image/products/all-products-img/1 (17).jpg",
     "contentLanguage": "fr",
     "targetCountry": "IR",
-    "channel": "online",
+    "imgList": [
+      "./assets/src/image/products/all-products-img/1 (1).jpg",
+      "./assets/src/image/products/small/s1.jpg",
+      "./assets/src/image/products/small/s2.jpg",
+      "./assets/src/image/products/small/s3.jpg",
+      "./assets/src/image/products/small/s4.jpg"
+    ],
     "ageGroup": "adult",
     "availability": "in stock",
     "availabilityDate": "2019-01-25T13:00:00-08:00",
@@ -1585,7 +1874,7 @@
   },
   {
     "kind": "drink",
-    "id": "d1",
+    "id": "d49",
     "offerId": "d1",
     "source": "api",
     "title": "قهوه سبز فوری مولتی کافه تندرستی - 30 ساشه 2 گرمی",
@@ -1594,7 +1883,13 @@
     "imageLink": "./assets/src/image/products/all-products-img/1 (18).jpg",
     "contentLanguage": "fr",
     "targetCountry": "IR",
-    "channel": "online",
+    "imgList": [
+      "./assets/src/image/products/all-products-img/1 (1).jpg",
+      "./assets/src/image/products/small/s1.jpg",
+      "./assets/src/image/products/small/s2.jpg",
+      "./assets/src/image/products/small/s3.jpg",
+      "./assets/src/image/products/small/s4.jpg"
+    ],
     "ageGroup": "adult",
     "availability": "in stock",
     "availabilityDate": "2019-01-25T13:00:00-08:00",
@@ -1618,7 +1913,7 @@
   },
   {
     "kind": "drink",
-    "id": "d1",
+    "id": "d50",
     "offerId": "d1",
     "source": "api",
     "title": "قهوه سبز فوری مولتی کافه تندرستی - 30 ساشه 2 گرمی",
@@ -1627,7 +1922,13 @@
     "imageLink": "./assets/src/image/products/all-products-img/1 (19).jpg",
     "contentLanguage": "fr",
     "targetCountry": "IR",
-    "channel": "online",
+    "imgList": [
+      "./assets/src/image/products/all-products-img/1 (1).jpg",
+      "./assets/src/image/products/small/s1.jpg",
+      "./assets/src/image/products/small/s2.jpg",
+      "./assets/src/image/products/small/s3.jpg",
+      "./assets/src/image/products/small/s4.jpg"
+    ],
     "ageGroup": "adult",
     "availability": "in stock",
     "availabilityDate": "2019-01-25T13:00:00-08:00",
@@ -1651,7 +1952,7 @@
   },
   {
     "kind": "drink",
-    "id": "d1",
+    "id": "d51",
     "offerId": "d1",
     "source": "api",
     "title": "قهوه سبز فوری مولتی کافه تندرستی - 30 ساشه 2 گرمی",
@@ -1660,7 +1961,13 @@
     "imageLink": "./assets/src/image/products/all-products-img/1 (20).jpg",
     "contentLanguage": "fr",
     "targetCountry": "IR",
-    "channel": "online",
+    "imgList": [
+      "./assets/src/image/products/all-products-img/1 (1).jpg",
+      "./assets/src/image/products/small/s1.jpg",
+      "./assets/src/image/products/small/s2.jpg",
+      "./assets/src/image/products/small/s3.jpg",
+      "./assets/src/image/products/small/s4.jpg"
+    ],
     "ageGroup": "adult",
     "availability": "in stock",
     "availabilityDate": "2019-01-25T13:00:00-08:00",
@@ -1684,7 +1991,7 @@
   },
   {
     "kind": "drink",
-    "id": "d1",
+    "id": "d52",
     "offerId": "d1",
     "source": "api",
     "title": "قهوه سبز فوری مولتی کافه تندرستی - 30 ساشه 2 گرمی",
@@ -1693,7 +2000,13 @@
     "imageLink": "./assets/src/image/products/all-products-img/1 (21).jpg",
     "contentLanguage": "fr",
     "targetCountry": "IR",
-    "channel": "online",
+    "imgList": [
+      "./assets/src/image/products/all-products-img/1 (1).jpg",
+      "./assets/src/image/products/small/s1.jpg",
+      "./assets/src/image/products/small/s2.jpg",
+      "./assets/src/image/products/small/s3.jpg",
+      "./assets/src/image/products/small/s4.jpg"
+    ],
     "ageGroup": "adult",
     "availability": "in stock",
     "availabilityDate": "2019-01-25T13:00:00-08:00",
@@ -1717,7 +2030,7 @@
   },
   {
     "kind": "drink",
-    "id": "d1",
+    "id": "d53",
     "offerId": "d1",
     "source": "api",
     "title": "قهوه سبز فوری مولتی کافه تندرستی - 30 ساشه 2 گرمی",
@@ -1726,7 +2039,13 @@
     "imageLink": "./assets/src/image/products/all-products-img/1 (22).jpg",
     "contentLanguage": "fr",
     "targetCountry": "IR",
-    "channel": "online",
+    "imgList": [
+      "./assets/src/image/products/all-products-img/1 (1).jpg",
+      "./assets/src/image/products/small/s1.jpg",
+      "./assets/src/image/products/small/s2.jpg",
+      "./assets/src/image/products/small/s3.jpg",
+      "./assets/src/image/products/small/s4.jpg"
+    ],
     "ageGroup": "adult",
     "availability": "in stock",
     "availabilityDate": "2019-01-25T13:00:00-08:00",
@@ -1750,7 +2069,7 @@
   },
   {
     "kind": "drink",
-    "id": "d1",
+    "id": "d54",
     "offerId": "d1",
     "source": "api",
     "title": "قهوه سبز فوری مولتی کافه تندرستی - 30 ساشه 2 گرمی",
@@ -1759,7 +2078,13 @@
     "imageLink": "./assets/src/image/products/all-products-img/1 (23).jpg",
     "contentLanguage": "fr",
     "targetCountry": "IR",
-    "channel": "online",
+    "imgList": [
+      "./assets/src/image/products/all-products-img/1 (1).jpg",
+      "./assets/src/image/products/small/s1.jpg",
+      "./assets/src/image/products/small/s2.jpg",
+      "./assets/src/image/products/small/s3.jpg",
+      "./assets/src/image/products/small/s4.jpg"
+    ],
     "ageGroup": "adult",
     "availability": "in stock",
     "availabilityDate": "2019-01-25T13:00:00-08:00",
@@ -1783,7 +2108,7 @@
   },
   {
     "kind": "drink",
-    "id": "d1",
+    "id": "d55",
     "offerId": "d1",
     "source": "api",
     "title": "قهوه سبز فوری مولتی کافه تندرستی - 30 ساشه 2 گرمی",
@@ -1792,7 +2117,13 @@
     "imageLink": "./assets/src/image/products/all-products-img/1 (24).jpg",
     "contentLanguage": "fr",
     "targetCountry": "IR",
-    "channel": "online",
+    "imgList": [
+      "./assets/src/image/products/all-products-img/1 (1).jpg",
+      "./assets/src/image/products/small/s1.jpg",
+      "./assets/src/image/products/small/s2.jpg",
+      "./assets/src/image/products/small/s3.jpg",
+      "./assets/src/image/products/small/s4.jpg"
+    ],
     "ageGroup": "adult",
     "availability": "in stock",
     "availabilityDate": "2019-01-25T13:00:00-08:00",
@@ -1816,7 +2147,7 @@
   },
   {
     "kind": "drink",
-    "id": "d1",
+    "id": "d56",
     "offerId": "d1",
     "source": "api",
     "title": "قهوه سبز فوری مولتی کافه تندرستی - 30 ساشه 2 گرمی",
@@ -1825,7 +2156,13 @@
     "imageLink": "./assets/src/image/products/all-products-img/1 (25).jpg",
     "contentLanguage": "fr",
     "targetCountry": "IR",
-    "channel": "online",
+    "imgList": [
+      "./assets/src/image/products/all-products-img/1 (1).jpg",
+      "./assets/src/image/products/small/s1.jpg",
+      "./assets/src/image/products/small/s2.jpg",
+      "./assets/src/image/products/small/s3.jpg",
+      "./assets/src/image/products/small/s4.jpg"
+    ],
     "ageGroup": "adult",
     "availability": "in stock",
     "availabilityDate": "2019-01-25T13:00:00-08:00",
@@ -1849,7 +2186,7 @@
   },
   {
     "kind": "drink",
-    "id": "d1",
+    "id": "d57",
     "offerId": "d1",
     "source": "api",
     "title": "قهوه سبز فوری مولتی کافه تندرستی - 30 ساشه 2 گرمی",
@@ -1858,7 +2195,13 @@
     "imageLink": "./assets/src/image/products/all-products-img/1 (26).jpg",
     "contentLanguage": "fr",
     "targetCountry": "IR",
-    "channel": "online",
+    "imgList": [
+      "./assets/src/image/products/all-products-img/1 (1).jpg",
+      "./assets/src/image/products/small/s1.jpg",
+      "./assets/src/image/products/small/s2.jpg",
+      "./assets/src/image/products/small/s3.jpg",
+      "./assets/src/image/products/small/s4.jpg"
+    ],
     "ageGroup": "adult",
     "availability": "in stock",
     "availabilityDate": "2019-01-25T13:00:00-08:00",
@@ -1882,7 +2225,7 @@
   },
   {
     "kind": "drink",
-    "id": "d1",
+    "id": "d58",
     "offerId": "d1",
     "source": "api",
     "title": "قهوه سبز فوری مولتی کافه تندرستی - 30 ساشه 2 گرمی",
@@ -1891,7 +2234,13 @@
     "imageLink": "./assets/src/image/products/all-products-img/1 (27).jpg",
     "contentLanguage": "fr",
     "targetCountry": "IR",
-    "channel": "online",
+    "imgList": [
+      "./assets/src/image/products/all-products-img/1 (1).jpg",
+      "./assets/src/image/products/small/s1.jpg",
+      "./assets/src/image/products/small/s2.jpg",
+      "./assets/src/image/products/small/s3.jpg",
+      "./assets/src/image/products/small/s4.jpg"
+    ],
     "ageGroup": "adult",
     "availability": "in stock",
     "availabilityDate": "2019-01-25T13:00:00-08:00",
@@ -1915,7 +2264,7 @@
   },
   {
     "kind": "drink",
-    "id": "d1",
+    "id": "d59",
     "offerId": "d1",
     "source": "api",
     "title": "قهوه سبز فوری مولتی کافه تندرستی - 30 ساشه 2 گرمی",
@@ -1924,7 +2273,13 @@
     "imageLink": "./assets/src/image/products/all-products-img/1 (28).jpg",
     "contentLanguage": "fr",
     "targetCountry": "IR",
-    "channel": "online",
+    "imgList": [
+      "./assets/src/image/products/all-products-img/1 (1).jpg",
+      "./assets/src/image/products/small/s1.jpg",
+      "./assets/src/image/products/small/s2.jpg",
+      "./assets/src/image/products/small/s3.jpg",
+      "./assets/src/image/products/small/s4.jpg"
+    ],
     "ageGroup": "adult",
     "availability": "in stock",
     "availabilityDate": "2019-01-25T13:00:00-08:00",
@@ -1948,7 +2303,7 @@
   },
   {
     "kind": "drink",
-    "id": "d1",
+    "id": "d60",
     "offerId": "d1",
     "source": "api",
     "title": "قهوه سبز فوری مولتی کافه تندرستی - 30 ساشه 2 گرمی",
@@ -1957,7 +2312,13 @@
     "imageLink": "./assets/src/image/products/all-products-img/1 (29).jpg",
     "contentLanguage": "fr",
     "targetCountry": "IR",
-    "channel": "online",
+    "imgList": [
+      "./assets/src/image/products/all-products-img/1 (1).jpg",
+      "./assets/src/image/products/small/s1.jpg",
+      "./assets/src/image/products/small/s2.jpg",
+      "./assets/src/image/products/small/s3.jpg",
+      "./assets/src/image/products/small/s4.jpg"
+    ],
     "ageGroup": "adult",
     "availability": "in stock",
     "availabilityDate": "2019-01-25T13:00:00-08:00",

@@ -1,4 +1,4 @@
-import fetchProdList from "./fetchProdList";
+import fetchProdList from "../../components/fetchProdList.js";
 
 export const pagination = async () => {
   const products = await fetchProdList();

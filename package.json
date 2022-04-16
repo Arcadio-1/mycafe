@@ -27,5 +27,8 @@
     "webpack-dev-server": "^4.8.1",
     "webpack-merge": "^5.8.0",
     "webpack-server": "^0.1.2"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0"
   }
 }
