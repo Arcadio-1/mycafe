@@ -1,10 +1,10 @@
 import { tagolmenu } from "./components/tagolmenu.js";
 import { navRender } from "./components/navRender.js";
-
-export const windowLoad = () => {
-  tagolmenu();
+const windowLoad = () => {
   navRender();
+  tagolmenu();
 };
+windowLoad();
 // window.addEventListener("load", () => {
 
 // });

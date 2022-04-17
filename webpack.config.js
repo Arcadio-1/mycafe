@@ -6,17 +6,19 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: {
+    mainJs: "./assets/src/main.js",
     indexJs: "./assets/src/app/index.js",
     indexStyles: "./assets/src/css/index.scss",
     prodListjs: "./assets/src/app/products-list.js",
     prodListStyles: "./assets/src/css/products-list.scss",
     productjs: "./assets/src/app/product.js",
     productStyles: "./assets/src/css/product.scss",
+    mainStyles: "./assets/src/css/main.scss",
   },
   module: {
     rules: [
       {
-        test: /\.scss$/,
+        test: /\.(scss|css)$/,
         use: [
           "style-loader", //3. Inject styles into DOM
           "css-loader", //2. Turns css into commonjs

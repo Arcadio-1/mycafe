@@ -16,7 +16,7 @@
   \*****************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _main_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../main.js */ \"./assets/src/main.js\");\n/* harmony import */ var _productsListIn_pagination_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./productsListIn/pagination.js */ \"./assets/src/app/productsListIn/pagination.js\");\n/* harmony import */ var _productsListIn_displayButtons__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./productsListIn/displayButtons */ \"./assets/src/app/productsListIn/displayButtons.js\");\n/* harmony import */ var _productsListIn_renderProducts__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./productsListIn/renderProducts */ \"./assets/src/app/productsListIn/renderProducts.js\");\n/* harmony import */ var _productsListIn_pageNumNavigate__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./productsListIn/pageNumNavigate */ \"./assets/src/app/productsListIn/pageNumNavigate.js\");\n/* eslint-disable no-undef */\r\n// import \"bootstrap\";\r\n\r\n\r\n\r\n\r\n\r\n\r\nconst btnContainer = document.querySelector(\".page-num-btn-container\");\r\n\r\n(0,_main_js__WEBPACK_IMPORTED_MODULE_0__.windowLoad)();\r\n\r\nlet index = 0;\r\n\r\nconst startJ = async () => {\r\n  await (0,_productsListIn_pagination_js__WEBPACK_IMPORTED_MODULE_1__.pagination)().then((data) => {\r\n    (0,_productsListIn_displayButtons__WEBPACK_IMPORTED_MODULE_2__.displayButtons)(btnContainer, data);\r\n    (0,_productsListIn_renderProducts__WEBPACK_IMPORTED_MODULE_3__.renderProducts)(data, index);\r\n    (0,_productsListIn_pageNumNavigate__WEBPACK_IMPORTED_MODULE_4__.pageNavigate)(data);\r\n  });\r\n};\r\nstartJ();\r\n\n\n//# sourceURL=webpack://cafetarane/./assets/src/app/products-list.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _productsListIn_pagination_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./productsListIn/pagination.js */ \"./assets/src/app/productsListIn/pagination.js\");\n/* harmony import */ var _productsListIn_displayButtons__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./productsListIn/displayButtons */ \"./assets/src/app/productsListIn/displayButtons.js\");\n/* harmony import */ var _productsListIn_renderProducts__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./productsListIn/renderProducts */ \"./assets/src/app/productsListIn/renderProducts.js\");\n/* harmony import */ var _productsListIn_pageNumNavigate__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./productsListIn/pageNumNavigate */ \"./assets/src/app/productsListIn/pageNumNavigate.js\");\n/* eslint-disable no-undef */\r\n// import \"bootstrap\";\r\n\r\n\r\n\r\n\r\n\r\nconst btnContainer = document.querySelector(\".page-num-btn-container\");\r\n\r\nlet index = 0;\r\n\r\nconst startJ = async () => {\r\n  await (0,_productsListIn_pagination_js__WEBPACK_IMPORTED_MODULE_0__.pagination)().then((data) => {\r\n    (0,_productsListIn_displayButtons__WEBPACK_IMPORTED_MODULE_1__.displayButtons)(btnContainer, data);\r\n    (0,_productsListIn_renderProducts__WEBPACK_IMPORTED_MODULE_2__.renderProducts)(data, index);\r\n    (0,_productsListIn_pageNumNavigate__WEBPACK_IMPORTED_MODULE_3__.pageNavigate)(data);\r\n  });\r\n};\r\nstartJ();\r\n\n\n//# sourceURL=webpack://cafetarane/./assets/src/app/products-list.js?");
 
 /***/ }),
 
@@ -67,36 +67,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst fetchProdList = async () => {\r\n  const prodListJ = await fetch(\"./assets/src/json/productList.json\");\r\n  const prodList = await prodListJ.json();\r\n  //   console.log(prodList);\r\n  return prodList;\r\n};\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (fetchProdList);\r\n\n\n//# sourceURL=webpack://cafetarane/./assets/src/components/fetchProdList.js?");
-
-/***/ }),
-
-/***/ "./assets/src/components/navRender.js":
-/*!********************************************!*\
-  !*** ./assets/src/components/navRender.js ***!
-  \********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"navRender\": () => (/* binding */ navRender)\n/* harmony export */ });\nconst navRender = async () => {\r\n  const navLinkCunt = document.querySelector(\".nav2-ul\");\r\n  ////\r\n  const getnavLinksJson = async () => {\r\n    const fetchNavLinks = await fetch(\"./assets/src/json/navLink.json\");\r\n    const data = await fetchNavLinks.json();\r\n    return data;\r\n  };\r\n  // console.log(getnavLinksJson);\r\n  const links = await getnavLinksJson();\r\n  links.map((item) => {\r\n    const creatLi = document.createElement(\"li\");\r\n    const { text, link } = item;\r\n    creatLi.innerHTML = `<a href=\"${link}\">${text}</a>`;\r\n    navLinkCunt.appendChild(creatLi);\r\n  });\r\n};\r\n\n\n//# sourceURL=webpack://cafetarane/./assets/src/components/navRender.js?");
-
-/***/ }),
-
-/***/ "./assets/src/components/tagolmenu.js":
-/*!********************************************!*\
-  !*** ./assets/src/components/tagolmenu.js ***!
-  \********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"tagolmenu\": () => (/* binding */ tagolmenu)\n/* harmony export */ });\nconst menuBtn = document.getElementById(\"hamberger-menu\");\r\nconst menuLinks = document.querySelector(\".nav2-ul\");\r\nconst menuLinksContiner = document.querySelector(\".nav-ul-container\");\r\nlet tog = false;\r\nconst tagolmenu = () => {\r\n  menuBtn.addEventListener(\"click\", () => {\r\n    console.log(menuLinksContiner);\r\n    const position = menuLinks.getBoundingClientRect();\r\n    console.log(tog);\r\n\r\n    // menuLinksContiner.classList.toggle(\"display-flex\");\r\n    if (!tog) {\r\n      tog = true;\r\n      return (menuLinksContiner.style.height = `${position.height}px`);\r\n    } else if (tog) {\r\n      tog = false;\r\n      return (menuLinksContiner.style.height = \"0px\");\r\n    }\r\n    console.log(tog);\r\n  });\r\n  window.addEventListener(\r\n    \"resize\",\r\n    () => {\r\n      const linkContainerClientRect = menuLinksContiner.getBoundingClientRect();\r\n      if (linkContainerClientRect.width > 830) {\r\n        return (menuLinksContiner.style.height = \"25px\");\r\n      } else if (linkContainerClientRect.width < 880) {\r\n        tog = false;\r\n        return (menuLinksContiner.style.height = \"0px\");\r\n      }\r\n    },\r\n    true\r\n  );\r\n};\r\n\n\n//# sourceURL=webpack://cafetarane/./assets/src/components/tagolmenu.js?");
-
-/***/ }),
-
-/***/ "./assets/src/main.js":
-/*!****************************!*\
-  !*** ./assets/src/main.js ***!
-  \****************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"windowLoad\": () => (/* binding */ windowLoad)\n/* harmony export */ });\n/* harmony import */ var _components_tagolmenu_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/tagolmenu.js */ \"./assets/src/components/tagolmenu.js\");\n/* harmony import */ var _components_navRender_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/navRender.js */ \"./assets/src/components/navRender.js\");\n\r\n\r\n\r\nconst windowLoad = () => {\r\n  (0,_components_tagolmenu_js__WEBPACK_IMPORTED_MODULE_0__.tagolmenu)();\r\n  (0,_components_navRender_js__WEBPACK_IMPORTED_MODULE_1__.navRender)();\r\n};\r\n// window.addEventListener(\"load\", () => {\r\n\r\n// });\r\n\n\n//# sourceURL=webpack://cafetarane/./assets/src/main.js?");
 
 /***/ })
 
