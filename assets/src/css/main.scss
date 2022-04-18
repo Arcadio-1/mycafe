@@ -10,6 +10,14 @@
   font-family: iransansbold;
   src: url(font/iransans/ttf/IRANSansWeb_Bold.ttf);
 }
+@font-face {
+  font-family: iranyekan;
+  src: url(font/iranyekan/IRANYekanWeb.ttf);
+}
+@font-face {
+  font-family: iranyekan-bold;
+  src: url(font/iranyekan/IRANYekanWeb-Bold.ttf);
+}
 // @import "~bootstrap/scss/bootstrap";
 * {
   --dark: #616161;
@@ -40,11 +48,35 @@ a {
   padding-bottom: 1em;
   margin-bottom: 10px;
 }
+.nav1-continer {
+  direction: rtl;
+  font-family: iransans;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+  width: 95vw;
+  max-width: 1364px;
+  color: var(--text-color);
+  // width: 100%;
+}
 .nav-1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 968px;
+  // width: 100%;
+}
+.nav-fix {
+  background-color: rgb(235, 235, 235);
+  z-index: 10;
+  position: fixed;
+  // position: absolute;
   width: 100%;
+  max-width: 100%;
+  // max-width: 968px;
 }
 .log {
   margin-right: 5px;
@@ -98,6 +130,11 @@ a {
   margin-top: auto;
   width: 30px;
 }
+.notif button {
+  cursor: pointer;
+  border: transparent;
+  background-color: transparent;
+}
 .notif :nth-child(2) {
   margin: auto 5px 0 5px;
   width: 30px;
@@ -112,6 +149,7 @@ a {
   overflow: hidden;
 }
 .nav-2 {
+  // margin-top: 4rem;
   padding-top: 1rem;
   padding: 1em 0 1em 0;
   font-size: 1em;
@@ -236,11 +274,12 @@ a {
 }
 .swiper {
   width: 100%;
-  height: 300px;
+  height: 330px;
   background-color: slategray;
   border-radius: 10px;
 }
 .swiper-slide {
+  width: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -359,6 +398,131 @@ strong {
 .mg-t1 {
   padding-top: 10em;
 }
+//***************** show basket ******/
+.show-basket {
+  direction: rtl;
+  font-family: iranyekan;
+  z-index: 15;
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 5px 5px 10px #38383823;
+  width: 400px;
+  border-radius: 10px;
+  // left: 400px;
+  // top: 60px;
+}
+.sh-b-up {
+  direction: rtl;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.276);
+  padding: 0.5rem 1rem;
+  // border: 2px solid #f66a86;
+}
+.sh-b-up-num {
+  direction: rtl;
+}
+.sh-b-up-go {
+  font-family: iranyekan-bold;
+  color: #006eb8;
+}
+.sh-b-mid {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  max-height: 400px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.sh-b-mid article {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.36);
+}
+.sh-b-mid-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // border: 2px solid #006eb8;
+  width: 35%;
+  height: 100%;
+}
+.sh-b-mid-img {
+  width: 100%;
+  height: 100%;
+}
+.sh-b-mid-mode {
+  margin: 1rem;
+}
+.sh-b-mid-left {
+  width: 62%;
+  // border: 2px solid #f66a86;
+}
+.sh-b-mid-title {
+  font-family: iranyekan-bold;
+}
+.sh-b-mid-moadel {
+  color: #565656;
+}
+.sh-b-mid-moadel i {
+  color: #006eb8;
+}
+.sh-b-mid-avalble {
+  color: #565656;
+}
+.sh-b-mid-avalble i {
+  color: #006eb8;
+}
+.sh-b--mid-off {
+  margin-top: 10px;
+  color: crimson;
+}
+.sh-b--mid-off i {
+  color: #f66a86;
+}
+.sh-b--mid-price {
+  font-family: iransansnum;
+  font-size: 1.2rem;
+}
+.sh-b-down {
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: -2px -2px 5px rgba(128, 128, 128, 0.306);
+}
+.sh-b-down-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sh-b-down-right:first-child {
+  color: #565656;
+}
+.submit-bascket {
+  font-family: iransans;
+  padding: 1rem 1.7rem;
+  color: white;
+  border: transparent;
+  box-shadow: 2px 2px 5px gray;
+  background-color: tomato;
+  border-radius: 10px;
+}
+.sh-b-totalPrice {
+  color: black;
+  font-size: 1.4rem;
+  font-family: iransansnum;
+}
+.display-basket-card {
+  display: flex;
+}
+//***********end of show basket****/
 @media screen and (min-width: 875px) {
   .nav-ul-container {
     transition: all 0.25s ease-in-out;
@@ -408,7 +572,4 @@ strong {
   .log-social {
     text-align: center;
   }
-  // .display-flex {
-  //   // height: 250px;
-  // }
 }

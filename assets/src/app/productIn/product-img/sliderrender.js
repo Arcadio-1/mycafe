@@ -1,11 +1,9 @@
 import { showSmallImg } from "./showSmallImg.js";
 export const sliderrender = (prod, index = 0) => {
   let lastIs = true;
-  // console.log(+index);
   const imgSlider = document.querySelector(".p-main-slider");
   const smallImg = document.querySelector(".p-s-img");
   let position = "next";
-  // index--;
   const mainImgCode = prod.imgList
     .map((link, id) => {
       if (id == index) {

@@ -20,6 +20,26 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./assets/src/components/navfix.js":
+/*!*****************************************!*\
+  !*** ./assets/src/components/navfix.js ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"navfix\": () => (/* binding */ navfix)\n/* harmony export */ });\nconst navfix = () => {\r\n  const navbar = document.querySelector(\".nav1-continer \");\r\n  window.addEventListener(\"scroll\", function () {\r\n    const scrollHeight = window.pageYOffset;\r\n    const navHeight = navbar.getBoundingClientRect().height;\r\n    if (scrollHeight > navHeight * 2) {\r\n      navbar.classList.add(\"nav-fix\");\r\n    } else {\r\n      navbar.classList.remove(\"nav-fix\");\r\n    }\r\n  });\r\n};\r\n\n\n//# sourceURL=webpack://cafetarane/./assets/src/components/navfix.js?");
+
+/***/ }),
+
+/***/ "./assets/src/components/showbasket.js":
+/*!*********************************************!*\
+  !*** ./assets/src/components/showbasket.js ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"showbasket\": () => (/* binding */ showbasket)\n/* harmony export */ });\nconst showbasket = () => {\r\n  const basketBtn = document.querySelector(\".show-basket-btn\");\r\n  const basketcard = document.querySelector(\".show-basket\");\r\n  const nav = document.querySelector(\".uper\");\r\n  const container = document.querySelectorAll(\".container\");\r\n  basketBtn.addEventListener(\"mouseover\", () => {\r\n    console.log(window.pageYOffset);\r\n\r\n    const basketBtnPosition = basketBtn.getBoundingClientRect();\r\n    basketcard.style.left = `${basketBtnPosition.left}px`;\r\n    basketcard.style.top = `${\r\n      basketBtnPosition.bottom + window.pageYOffset - 3\r\n    }px`;\r\n    basketcard.classList.add(\"display-basket-card\");\r\n  });\r\n  nav.addEventListener(\"mouseover\", (e) => {\r\n    if (!e.target.parentElement.classList.contains(\"show-basket-btn\")) {\r\n      basketcard.classList.remove(\"display-basket-card\");\r\n    }\r\n  });\r\n  container.forEach((cunt) => {\r\n    cunt.addEventListener(\"mouseover\", () => {\r\n      if (basketcard.classList.contains(\"display-basket-card\")) {\r\n        basketcard.classList.remove(\"display-basket-card\");\r\n      }\r\n    });\r\n  });\r\n};\r\n\n\n//# sourceURL=webpack://cafetarane/./assets/src/components/showbasket.js?");
+
+/***/ }),
+
 /***/ "./assets/src/components/tagolmenu.js":
 /*!********************************************!*\
   !*** ./assets/src/components/tagolmenu.js ***!
@@ -36,7 +56,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_tagolmenu_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/tagolmenu.js */ \"./assets/src/components/tagolmenu.js\");\n/* harmony import */ var _components_navRender_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/navRender.js */ \"./assets/src/components/navRender.js\");\n\r\n\r\nconst windowLoad = () => {\r\n  (0,_components_navRender_js__WEBPACK_IMPORTED_MODULE_1__.navRender)();\r\n  (0,_components_tagolmenu_js__WEBPACK_IMPORTED_MODULE_0__.tagolmenu)();\r\n};\r\nwindowLoad();\r\n// window.addEventListener(\"load\", () => {\r\n\r\n// });\r\n\n\n//# sourceURL=webpack://cafetarane/./assets/src/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_tagolmenu_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/tagolmenu.js */ \"./assets/src/components/tagolmenu.js\");\n/* harmony import */ var _components_navRender_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/navRender.js */ \"./assets/src/components/navRender.js\");\n/* harmony import */ var _components_navfix_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/navfix.js */ \"./assets/src/components/navfix.js\");\n/* harmony import */ var _components_showbasket_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/showbasket.js */ \"./assets/src/components/showbasket.js\");\n\r\n\r\n\r\n\r\nconst windowLoad = () => {\r\n  (0,_components_navRender_js__WEBPACK_IMPORTED_MODULE_1__.navRender)();\r\n  (0,_components_tagolmenu_js__WEBPACK_IMPORTED_MODULE_0__.tagolmenu)();\r\n  (0,_components_navfix_js__WEBPACK_IMPORTED_MODULE_2__.navfix)();\r\n  (0,_components_showbasket_js__WEBPACK_IMPORTED_MODULE_3__.showbasket)();\r\n};\r\nwindowLoad();\r\n// window.addEventListener(\"load\", () => {\r\n\r\n// });\r\n\n\n//# sourceURL=webpack://cafetarane/./assets/src/main.js?");
 
 /***/ })
 

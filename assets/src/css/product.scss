@@ -275,8 +275,10 @@ input:checked + .p-s-w:hover {
   align-items: flex-start;
   margin: 0em 0.5em 0em 0em;
 }
+.quantity span {
+  margin-left: 1em;
+}
 .quantity-intro {
-  margin-right: 1em;
   display: flex;
   border: 2px solid rgba(16, 87, 201, 0.417);
   width: 70px;
@@ -1088,4 +1090,10 @@ td {
   .q-txt-area {
     flex-direction: column;
   }
+}
+.swiper-slide {
+  width: 190px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

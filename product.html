@@ -10,21 +10,20 @@
         <script src="./assets/scripts/mainStyles.bundle.js"></script>
         
         <script
-      src="./assets/scripts/productjs.bundle.js"
-      type="module"
-      defer
-    ></script>
-    <script src="./assets/scripts/productStyles.bundle.js"></script>
-
-
-
+        src="./assets/scripts/productjs.bundle.js"
+        type="module"
+        defer
+        ></script>
+        <!-- <link rel="stylesheet" href="./assets/src/css/test.css"> -->
+        
+        
+        <script src="./assets/scripts/productStyles.bundle.js"defer ></script>
 
     <title>کافه ترانه</title>
   </head>
   <body>
     <div class="uper">
-      <div class="container">
-        <header>
+      <div class="nav1-continer">
           <div class="nav-1">
             <div class="logo">
               <a href="./index.html">
@@ -56,9 +55,19 @@
                 src="./assets/src/image/icon/heart.svg"
                 alt="علاقه مندی ها"
               />
-              <img src="./assets/src/image/icon/basket.svg" alt="سبد خرید" />
+              <button class="show-basket-btn">
+                <img src="./assets/src/image/icon/basket.svg" alt="سبد خرید" />
+              </button>
+
             </div>
           </div>
+          
+        </div>
+        
+        
+        
+        <div class="container">
+          <header>
           <div class="nav-2">
             <div id="menu">
               <button id="hamberger-menu"><i class="fas fa-bars"></i></button>
@@ -69,8 +78,121 @@
           </div>
         </header>
       </div>
-    </div>
 
+    </div>
+    <div class="show-basket">
+          <div class="sh-b-up">
+            <p><span class="sh-b-up-num">4</span><span> کالا  </span></p>
+            <a class="sh-b-up-go" href="./index.html">مشاهده سبد خرید</a>
+          </div>
+          <div class="sh-b-mid">
+            <article>
+                            <div class="sh-b-mid-right">
+              <img src="./assets/src/image/products/all-products-img/1 (1).jpg" class="sh-b-mid-img" alt="">
+              <img src="./assets/src/image/productCard/Special.svg" class="sh-b-mid-mode" alt="">
+              <div class="quantity-intro">
+              <div class="btn-r">
+                <input type="button" class="butt" id="btn-plus" >
+              </div>
+              <div class="btn-m">
+                <input
+                  type="number"
+                  class="quantity-num"
+                  pattern="[0-9]*"
+                  value="1"
+                  max="10"
+                  min="1"
+                  id="quant"
+                />
+              </div>
+              <div class="btn-l">
+                <input type="button" class="butt" id="btn-minus" >
+              </div>
+            </div>
+            </div>
+            <div class="sh-b-mid-left">
+              <p class="sh-b-mid-title">قهوه‌ فرانسه بن مانو -250 گرم </p>
+              <p class="sh-b-mid-moadel"><i class="fa-solid fa-box-archive"></i> بسته 250 گرمی</p>
+              <p class="sh-b-mid-avalble"> <i class="fa-solid fa-cubes"></i> موجود در انبار</p>
+              <p class="sh-b--mid-off"> <i class="fa-solid fa-percent"></i> 7,600 تخفیف</p>
+              <p class="sh-b--mid-price"> 755,800 <span> تومان </span></p>
+            </div>
+            </article>
+            <article>
+                            <div class="sh-b-mid-right">
+              <img src="./assets/src/image/products/all-products-img/1 (1).jpg" class="sh-b-mid-img" alt="">
+              <img src="./assets/src/image/productCard/Special.svg" class="sh-b-mid-mode" alt="">
+              <div class="quantity-intro">
+              <div class="btn-r">
+                <input type="button" class="butt" id="btn-plus" >
+              </div>
+              <div class="btn-m">
+                <input
+                  type="number"
+                  class="quantity-num"
+                  pattern="[0-9]*"
+                  value="1"
+                  max="10"
+                  min="1"
+                  id="quant"
+                />
+              </div>
+              <div class="btn-l">
+                <input type="button" class="butt" id="btn-minus" >
+              </div>
+            </div>
+            </div>
+            <div class="sh-b-mid-left">
+              <p class="sh-b-mid-title">قهوه‌ فرانسه بن مانو -250 گرم </p>
+              <p class="sh-b-mid-moadel"><i class="fa-solid fa-box-archive"></i> بسته 250 گرمی</p>
+              <p class="sh-b-mid-avalble"> <i class="fa-solid fa-cubes"></i> موجود در انبار</p>
+              <p class="sh-b--mid-off"> <i class="fa-solid fa-percent"></i> 7,600 تخفیف</p>
+              <p class="sh-b--mid-price"> 755,800 <span> تومان </span></p>
+            </div>
+            </article>
+            <article>
+                            <div class="sh-b-mid-right">
+              <img src="./assets/src/image/products/all-products-img/1 (1).jpg" class="sh-b-mid-img" alt="">
+              <img src="./assets/src/image/productCard/Special.svg" class="sh-b-mid-mode" alt="">
+              <div class="quantity-intro">
+              <div class="btn-r">
+                <input type="button" class="butt" id="btn-plus" >
+              </div>
+              <div class="btn-m">
+                <input
+                  type="number"
+                  class="quantity-num"
+                  pattern="[0-9]*"
+                  value="1"
+                  max="10"
+                  min="1"
+                  id="quant"
+                />
+              </div>
+              <div class="btn-l">
+                <input type="button" class="butt" id="btn-minus" >
+              </div>
+            </div>
+            </div>
+            <div class="sh-b-mid-left">
+              <p class="sh-b-mid-title">قهوه‌ فرانسه بن مانو -250 گرم </p>
+              <p class="sh-b-mid-moadel"><i class="fa-solid fa-box-archive"></i> بسته 250 گرمی</p>
+              <p class="sh-b-mid-avalble"> <i class="fa-solid fa-cubes"></i> موجود در انبار</p>
+              <p class="sh-b--mid-off"> <i class="fa-solid fa-percent"></i> 7,600 تخفیف</p>
+              <p class="sh-b--mid-price"> 755,800 <span> تومان </span></p>
+            </div>
+            </article>
+          </div>
+          <div class="sh-b-down">
+            <div class="sh-b-down-right">
+              <p>مبلغ قابل پرداخت</p>
+              <p><span class="sh-b-totalPrice">755,650</span><span> تومان </span></p>
+            </div>
+            <div class="sh-b-down-left">
+              <button class="submit-bascket">ثبت سفارش</button>
+            </div>
+          </div>
+    </div>
     <div class="container">
       <div class="product-container">
         <div class="p-adrs">
@@ -83,29 +205,12 @@
 
             <div class="p-main-slidier-container">
             <div class="p-main-slider">
-              <!-- <img class="p-main-img" style="display: none;" src="./assets/src/image/products/b1.jpg" alt="" />
-              <img class="p-main-img" src="./assets/src/image/products/small/s1.jpg" alt="" />
-              <img class="p-main-img" src="./assets/src/image/products/small/s2.jpg" alt="" />
-              <img class="p-main-img" src="./assets/src/image/products/small/s3.jpg" alt="" />
-              <img class="p-main-img" src="./assets/src/image/products/small/s4.jpg" alt="" /> -->
             </div>
             <button id="next-img-btn"><i class="fa-solid fa-circle-chevron-right"></i></button>
             <button id="prev-img-btn"><i class="fa-solid fa-circle-chevron-left"></i></button>
             </div>
 
             <div class="p-s-img">
-              <!-- <div class="p-s-area">
-                <img src="./assets/src/image/products/small/s1.jpg" alt="" />
-              </div>
-              <div class="p-s-area">
-                <img src="./assets/src/image/products/small/s2.jpg" alt="" />
-              </div>
-              <div class="p-s-area">
-                <img src="./assets/src/image/products/small/s3.jpg" alt="" />
-              </div>
-              <div class="p-s-area">
-                <img src="./assets/src/image/products/small/s4.jpg" alt="" />
-              </div> -->
             </div>
           </div>
           <div class="p-details">
@@ -710,7 +815,8 @@
   <div class="swiper-wrapper">
     <!-- Slides -->
     <div class="swiper-slide">
-      <div class="Bestsellers-title">
+      <a href="./index.html">
+              <div class="Bestsellers-title">
         <div style="text-align: center;">
         <p>پرفروش ترین</p>
         <p>محصولات</p>
@@ -718,6 +824,8 @@
 
         <button><a href="./productsList.html">مشاهده همه</a></button>
       </div>
+      </a>
+
     </div>
     <div class="swiper-slide">
       <div class="products product-1">
@@ -734,7 +842,7 @@
             </div>
           </div>
         </div>
-      </div>
+    </div>
     <div class="swiper-slide">
       <div class="products product-2">
           <img class="proimg" src="./assets/src/image/BSell/2.jpg" alt="" />
@@ -750,7 +858,7 @@
             </div>
           </div>
         </div>
-      </div>
+    </div>
     <div class="swiper-slide">
       <div class="products product-3">
           <img class="proimg" src="./assets/src/image/BSell/3.jpg" alt="" />
@@ -766,7 +874,7 @@
             </div>
           </div>
         </div>
-      </div>
+    </div>
     <div class="swiper-slide">
       <div class="products product-4">
           <img class="proimg" src="./assets/src/image/BSell/4.jpg" alt="" />
@@ -782,7 +890,7 @@
             </div>
           </div>
         </div>
-      </div>
+    </div>
     <div class="swiper-slide">
       <div class="products product-5">
           <img class="proimg" src="./assets/src/image/BSell/5.jpg" alt="" />
@@ -798,7 +906,7 @@
             </div>
           </div>
         </div>
-      </div>
+    </div>
     <div class="swiper-slide">
       <div class="products product-6">
           <img class="proimg" src="./assets/src/image/BSell/6.jpg" alt="" />
@@ -814,7 +922,7 @@
             </div>
           </div>
         </div>
-      </div>
+    </div>
     <div class="swiper-slide">
       <div class="products product-1">
           <img class="proimg" src="./assets/src/image/BSell/1.jpg" alt="" />
@@ -830,7 +938,7 @@
             </div>
           </div>
         </div>
-      </div>
+    </div>
     <div class="swiper-slide">
       <div class="products product-2">
           <img class="proimg" src="./assets/src/image/BSell/2.jpg" alt="" />
@@ -846,7 +954,7 @@
             </div>
           </div>
         </div>
-      </div>
+    </div>
     <div class="swiper-slide">
       <div class="products product-3">
           <img class="proimg" src="./assets/src/image/BSell/3.jpg" alt="" />
@@ -862,7 +970,7 @@
             </div>
           </div>
         </div>
-      </div>
+    </div>
     <div class="swiper-slide">
       <div class="products product-4">
           <img class="proimg" src="./assets/src/image/BSell/4.jpg" alt="" />
@@ -878,7 +986,7 @@
             </div>
           </div>
         </div>
-          </div>
+    </div>
     <div class="swiper-slide">
       <div class="products product-5">
           <img class="proimg" src="./assets/src/image/BSell/5.jpg" alt="" />
@@ -894,7 +1002,7 @@
             </div>
           </div>
         </div>
-      </div>
+    </div>
     <div class="swiper-slide">
       <div class="products product-6">
           <img class="proimg" src="./assets/src/image/BSell/6.jpg" alt="" />
@@ -910,7 +1018,7 @@
             </div>
           </div>
         </div>
-      </div>
+    </div>
   </div>
   <!-- If we need pagination -->
   <div class="swiper-pagination"></div>
