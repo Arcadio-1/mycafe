@@ -10,8 +10,8 @@ export function renderProducts(prodList, index) {
     numBtn[index].classList.add("active");
     const HTprodList = prodList[index]
       .map((prod) => {
-        const { title, link, imageLink, price } = prod;
-        return `<div class="products product-1">
+        const { title, link, imageLink, price, id } = prod;
+        return `<div class="products" data-id="${id}">
             <a href="${link}">
               <img class="proimg" src="${imageLink}" alt="" />
               <h3>${title}</h3>

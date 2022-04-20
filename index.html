@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <base href="." />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-    />
+    <script
+      src="https://kit.fontawesome.com/29a73ce016.js"
+      crossorigin="anonymous"
+    ></script>
     <script
       src="./assets/scripts/mainJs.bundle.js"
       type="module"
@@ -26,44 +26,39 @@
   </head>
   <body>
     <div class="uper">
+      <div class="nav1-continer">
+        <div class="nav-1">
+          <div class="logo">
+            <a href="./index.html">
+              <img src="./assets/src/image/Tarane-Logo2.png" alt="کافه ترانه"
+            /></a>
+          </div>
+          <div class="log">
+            <a href="#">ورود</a>
+            <span>/</span>
+            <a href="#">ثبت نام</a>
+          </div>
+          <div class="search-box">
+            <label for="search"
+              ><img
+                src="./assets/src/image/icon/search_icon.svg"
+                alt=""
+                for="search"
+            /></label>
+            <input type="text" placeholder="جستجو در کافه ترانه" id="search" />
+          </div>
+
+          <div class="notif">
+            <img src="./assets/src/image/icon/Compare.png" alt="مقایسه" />
+            <img src="./assets/src/image/icon/heart.svg" alt="علاقه مندی ها" />
+            <button class="show-basket-btn">
+              <img src="./assets/src/image/icon/basket.svg" alt="سبد خرید" />
+            </button>
+          </div>
+        </div>
+      </div>
       <div class="container">
         <header>
-          <div class="nav-1">
-            <div class="logo">
-              <a href="./index.html">
-                <img src="./assets/src/image/Tarane-Logo2.png" alt="کافه ترانه"
-              /></a>
-            </div>
-            <div class="log">
-              <a href="#">ورود</a>
-              <span>/</span>
-              <a href="#">ثبت نام</a>
-            </div>
-            <div class="search-box">
-              <label for="search"
-                ><img
-                  src="./assets/src/image/icon/search_icon.svg"
-                  alt=""
-                  for="search"
-              /></label>
-              <input
-                type="text"
-                placeholder="جستجو در کافه ترانه"
-                id="search"
-              />
-            </div>
-
-            <div class="notif">
-              <img src="./assets/src/image/icon/Compare.png" alt="مقایسه" />
-              <img
-                src="./assets/src/image/icon/heart.svg"
-                alt="علاقه مندی ها"
-              />
-              <a href="" class="testJson"
-                ><img src="./assets/src/image/icon/basket.svg" alt="سبد خرید"
-              /></a>
-            </div>
-          </div>
           <div class="nav-2">
             <div id="menu">
               <button id="hamberger-menu"><i class="fas fa-bars"></i></button>
@@ -87,257 +82,167 @@
         </section>
       </div>
     </div>
+    <div class="show-basket">
+      <div class="sh-b-up">
+        <p><span class="sh-b-up-num">4</span><span> کالا </span></p>
+        <a class="sh-b-up-go" href="./index.html">مشاهده سبد خرید</a>
+      </div>
+      <div class="sh-b-mid">
+        <article>
+          <div class="sh-b-mid-right">
+            <img
+              src="./assets/src/image/products/all-products-img/1 (1).jpg"
+              class="sh-b-mid-img"
+              alt=""
+            />
+            <img
+              src="./assets/src/image/productCard/Special.svg"
+              class="sh-b-mid-mode"
+              alt=""
+            />
+            <div class="quantity-intro">
+              <div class="btn-r">
+                <input type="button" class="butt" id="btn-plus" />
+              </div>
+              <div class="btn-m">
+                <input
+                  type="number"
+                  class="quantity-num"
+                  pattern="[0-9]*"
+                  value="1"
+                  max="10"
+                  min="1"
+                  id="quant"
+                />
+              </div>
+              <div class="btn-l">
+                <input type="button" class="butt" id="btn-minus" />
+              </div>
+            </div>
+          </div>
+          <div class="sh-b-mid-left">
+            <p class="sh-b-mid-title">قهوه‌ فرانسه بن مانو -250 گرم</p>
+            <p class="sh-b-mid-moadel">
+              <i class="fa-solid fa-box-archive"></i> بسته 250 گرمی
+            </p>
+            <p class="sh-b-mid-avalble">
+              <i class="fa-solid fa-cubes"></i> موجود در انبار
+            </p>
+            <p class="sh-b--mid-off">
+              <i class="fa-solid fa-percent"></i> 7,600 تخفیف
+            </p>
+            <p class="sh-b--mid-price">755,800 <span> تومان </span></p>
+          </div>
+        </article>
+        <article>
+          <div class="sh-b-mid-right">
+            <img
+              src="./assets/src/image/products/all-products-img/1 (1).jpg"
+              class="sh-b-mid-img"
+              alt=""
+            />
+            <img
+              src="./assets/src/image/productCard/Special.svg"
+              class="sh-b-mid-mode"
+              alt=""
+            />
+            <div class="quantity-intro">
+              <div class="btn-r">
+                <input type="button" class="butt" id="btn-plus" />
+              </div>
+              <div class="btn-m">
+                <input
+                  type="number"
+                  class="quantity-num"
+                  pattern="[0-9]*"
+                  value="1"
+                  max="10"
+                  min="1"
+                  id="quant"
+                />
+              </div>
+              <div class="btn-l">
+                <input type="button" class="butt" id="btn-minus" />
+              </div>
+            </div>
+          </div>
+          <div class="sh-b-mid-left">
+            <p class="sh-b-mid-title">قهوه‌ فرانسه بن مانو -250 گرم</p>
+            <p class="sh-b-mid-moadel">
+              <i class="fa-solid fa-box-archive"></i> بسته 250 گرمی
+            </p>
+            <p class="sh-b-mid-avalble">
+              <i class="fa-solid fa-cubes"></i> موجود در انبار
+            </p>
+            <p class="sh-b--mid-off">
+              <i class="fa-solid fa-percent"></i> 7,600 تخفیف
+            </p>
+            <p class="sh-b--mid-price">755,800 <span> تومان </span></p>
+          </div>
+        </article>
+        <article>
+          <div class="sh-b-mid-right">
+            <img
+              src="./assets/src/image/products/all-products-img/1 (1).jpg"
+              class="sh-b-mid-img"
+              alt=""
+            />
+            <img
+              src="./assets/src/image/productCard/Special.svg"
+              class="sh-b-mid-mode"
+              alt=""
+            />
+            <div class="quantity-intro">
+              <div class="btn-r">
+                <input type="button" class="butt" id="btn-plus" />
+              </div>
+              <div class="btn-m">
+                <input
+                  type="number"
+                  class="quantity-num"
+                  pattern="[0-9]*"
+                  value="1"
+                  max="10"
+                  min="1"
+                  id="quant"
+                />
+              </div>
+              <div class="btn-l">
+                <input type="button" class="butt" id="btn-minus" />
+              </div>
+            </div>
+          </div>
+          <div class="sh-b-mid-left">
+            <p class="sh-b-mid-title">قهوه‌ فرانسه بن مانو -250 گرم</p>
+            <p class="sh-b-mid-moadel">
+              <i class="fa-solid fa-box-archive"></i> بسته 250 گرمی
+            </p>
+            <p class="sh-b-mid-avalble">
+              <i class="fa-solid fa-cubes"></i> موجود در انبار
+            </p>
+            <p class="sh-b--mid-off">
+              <i class="fa-solid fa-percent"></i> 7,600 تخفیف
+            </p>
+            <p class="sh-b--mid-price">755,800 <span> تومان </span></p>
+          </div>
+        </article>
+      </div>
+      <div class="sh-b-down">
+        <div class="sh-b-down-right">
+          <p>مبلغ قابل پرداخت</p>
+          <p>
+            <span class="sh-b-totalPrice">755,650</span><span> تومان </span>
+          </p>
+        </div>
+        <div class="sh-b-down-left">
+          <button class="submit-bascket">ثبت سفارش</button>
+        </div>
+      </div>
+    </div>
     <div class="container">
       <div class="offcnt-outer">
         <h2>فروش ویژه</h2>
-        <div class="offcnt">
-          <!-- <div class="offcnt-c">
-            <div class="small-side small-side1">
-              <h3>قهوه فرانسه بن مانو -250گرم</h3>
-              <div class="small-side-dwn">
-                <img
-                  class="offcnt-pro-img"
-                  src="image/off-price/off-price-small/1.jpg"
-                  alt=""
-                />
-                <div class="offcnt-pro-dtl">
-                  <div>
-                    <del class="offcnt-pro-del">14,700</del>
-                    <div>
-                      <span class="offcnt-pro-price">138,600</span>
-                      <span class="offcnt-pro-tmn">تومان</span>
-                    </div>
-                  </div>
-                  <div class="add-basket">
-                    <img
-                      class="offcnt-pro-basket"
-                      src="image/icon/order.png"
-                      alt=""
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="big-side big-side1">
-              <div class="big-side-title">
-                <h3>Bonmano</h3>
-                <h3>بن مانو</h3>
-              </div>
-              <div class="big-side-dwn">
-                <div class="big-side-off">
-                  <p>تا</p>
-                  <p>-%30</p>
-                </div>
-                <img src="image/off-price/off-price--big/1.png" alt="" />
-              </div>
-            </div>
-          </div>
-          <div class="offcnt-c">
-            <div class="big-side big-side2">
-              <div class="big-side-title">
-                <h3>Bonmano</h3>
-                <h3>بن مانو</h3>
-              </div>
-              <div class="big-side-dwn">
-                <div class="big-side-off">
-                  <p>تا</p>
-                  <p>-%30</p>
-                </div>
-                <img src="image/off-price/off-price--big/1.png" alt="" />
-              </div>
-            </div>
-            <div class="small-side small-side2">
-              <h3>قهوه فرانسه بن مانو -250گرم</h3>
-              <div class="small-side-dwn">
-                <img
-                  class="offcnt-pro-img"
-                  src="image/off-price/off-price-small/1.jpg"
-                  alt=""
-                />
-                <div class="offcnt-pro-dtl">
-                  <div>
-                    <del class="offcnt-pro-del">14,700</del>
-                    <div>
-                      <span class="offcnt-pro-price">138,600</span>
-                      <span class="offcnt-pro-tmn">تومان</span>
-                    </div>
-                  </div>
-                  <div class="add-basket">
-                    <img
-                      class="offcnt-pro-basket"
-                      src="image/icon/order.png"
-                      alt=""
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="offcnt-c">
-            <div class="small-side small-side3">
-              <h3>قهوه فرانسه بن مانو -250گرم</h3>
-              <div class="small-side-dwn">
-                <img
-                  class="offcnt-pro-img"
-                  src="image/off-price/off-price-small/1.jpg"
-                  alt=""
-                />
-                <div class="offcnt-pro-dtl">
-                  <div>
-                    <del class="offcnt-pro-del">14,700</del>
-                    <div>
-                      <span class="offcnt-pro-price">138,600</span>
-                      <span class="offcnt-pro-tmn">تومان</span>
-                    </div>
-                  </div>
-                  <div class="add-basket">
-                    <img
-                      class="offcnt-pro-basket"
-                      src="image/icon/order.png"
-                      alt=""
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="big-side big-side3">
-              <div class="big-side-title">
-                <h3>Bonmano</h3>
-                <h3>بن مانو</h3>
-              </div>
-              <div class="big-side-dwn">
-                <div class="big-side-off">
-                  <p>تا</p>
-                  <p>- %30</p>
-                </div>
-                <img src="image/off-price/off-price--big/1.png" alt="" />
-              </div>
-            </div>
-          </div>
-          <div class="offcnt-c">
-            <div class="big-side big-side4">
-              <div class="big-side-title">
-                <h3>Bonmano</h3>
-                <h3>بن مانو</h3>
-              </div>
-              <div class="big-side-dwn">
-                <div class="big-side-off">
-                  <p>تا</p>
-                  <p>-%30</p>
-                </div>
-                <img src="image/off-price/off-price--big/1.png" alt="" />
-              </div>
-            </div>
-            <div class="small-side small-side4">
-              <h3>قهوه فرانسه بن مانو -250گرم</h3>
-              <div class="small-side-dwn">
-                <img
-                  class="offcnt-pro-img"
-                  src="image/off-price/off-price-small/1.jpg"
-                  alt=""
-                />
-                <div class="offcnt-pro-dtl">
-                  <div>
-                    <del class="offcnt-pro-del">14,700</del>
-                    <div>
-                      <span class="offcnt-pro-price">138,600</span>
-                      <span class="offcnt-pro-tmn">تومان</span>
-                    </div>
-                  </div>
-                  <div class="add-basket">
-                    <img
-                      class="offcnt-pro-basket"
-                      src="image/icon/order.png"
-                      alt=""
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="offcnt-c">
-            <div class="small-side small-side4">
-              <h3>قهوه فرانسه بن مانو -250گرم</h3>
-              <div class="small-side-dwn">
-                <img
-                  class="offcnt-pro-img"
-                  src="image/off-price/off-price-small/1.jpg"
-                  alt=""
-                />
-                <div class="offcnt-pro-dtl">
-                  <div>
-                    <del class="offcnt-pro-del">14,700</del>
-                    <div>
-                      <span class="offcnt-pro-price">138,600</span>
-                      <span class="offcnt-pro-tmn">تومان</span>
-                    </div>
-                  </div>
-                  <div class="add-basket">
-                    <img
-                      class="offcnt-pro-basket"
-                      src="image/icon/order.png"
-                      alt=""
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="big-side big-side4">
-              <div class="big-side-title">
-                <h3>Bonmano</h3>
-                <h3>بن مانو</h3>
-              </div>
-              <div class="big-side-dwn">
-                <div class="big-side-off">
-                  <p>تا</p>
-                  <p>-%30</p>
-                </div>
-                <img src="image/off-price/off-price--big/1.png" alt="" />
-              </div>
-            </div>
-          </div>
-          <div class="offcnt-c">
-            <div class="big-side big-side4">
-              <div class="big-side-title">
-                <h3>Bonmano</h3>
-                <h3>بن مانو</h3>
-              </div>
-              <div class="big-side-dwn">
-                <div class="big-side-off">
-                  <p>تا</p>
-                  <p>-%30</p>
-                </div>
-                <img src="image/off-price/off-price--big/1.png" alt="" />
-              </div>
-            </div>
-            <div class="small-side small-side4">
-              <h3>قهوه فرانسه بن مانو -250گرم</h3>
-              <div class="small-side-dwn">
-                <img
-                  class="offcnt-pro-img"
-                  src="image/off-price/off-price-small/1.jpg"
-                  alt=""
-                />
-                <div class="offcnt-pro-dtl">
-                  <div>
-                    <del class="offcnt-pro-del">14,700</del>
-                    <div>
-                      <span class="offcnt-pro-price">138,600</span>
-                      <span class="offcnt-pro-tmn">تومان</span>
-                    </div>
-                  </div>
-                  <div class="add-basket">
-                    <img
-                      class="offcnt-pro-basket"
-                      src="image/icon/order.png"
-                      alt=""
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> -->
-        </div>
+        <div class="offcnt"></div>
       </div>
       <div class="best-sell">
         <h2>محصولات پر فروش</h2>

@@ -4,8 +4,6 @@ export const showbasket = () => {
   const nav = document.querySelector(".uper");
   const container = document.querySelectorAll(".container");
   basketBtn.addEventListener("mouseover", () => {
-    console.log(window.pageYOffset);
-
     const basketBtnPosition = basketBtn.getBoundingClientRect();
     basketcard.style.left = `${basketBtnPosition.left}px`;
     basketcard.style.top = `${

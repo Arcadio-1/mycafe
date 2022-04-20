@@ -4,6 +4,7 @@ import { pagination } from "./productsListIn/pagination.js";
 import { displayButtons } from "./productsListIn/displayButtons";
 import { renderProducts } from "./productsListIn/renderProducts";
 import { pageNavigate } from "./productsListIn/pageNumNavigate";
+import { creatcooki } from "./productsListIn/creatcooki";
 
 const btnContainer = document.querySelector(".page-num-btn-container");
 
@@ -14,6 +15,7 @@ const startJ = async () => {
     displayButtons(btnContainer, data);
     renderProducts(data, index);
     pageNavigate(data);
+    creatcooki();
   });
 };
 startJ();

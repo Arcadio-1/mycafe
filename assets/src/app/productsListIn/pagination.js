@@ -2,7 +2,7 @@ import fetchProdList from "../../components/fetchProdList.js";
 
 export const pagination = async () => {
   const products = await fetchProdList();
-  const perPage = 16;
+  const perPage = 24;
   const pageNum = Math.ceil(products.length / perPage);
   const newprod = Array.from({ length: pageNum }, (_, index) => {
     let start = index * perPage;

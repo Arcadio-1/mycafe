@@ -270,83 +270,7 @@ input:checked + .p-s-w:hover {
 .p-asyab:hover {
   background-color: white;
 }
-.quantity {
-  display: flex;
-  align-items: flex-start;
-  margin: 0em 0.5em 0em 0em;
-}
-.quantity span {
-  margin-left: 1em;
-}
-.quantity-intro {
-  display: flex;
-  border: 2px solid rgba(16, 87, 201, 0.417);
-  width: 70px;
-  height: 22px;
-  border-radius: 10px;
-  align-items: center;
-  justify-content: space-between;
-}
-.quantity-intro img {
-  width: 15px;
-}
-.btn-r {
-  margin-top: 0px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  text-align: center;
-  width: 30%;
-  cursor: pointer;
-  /* border: 1px solid green; */
-}
-.btn-r input {
-  box-shadow: none;
-  width: 15px;
-  background-image: url(../image/icon/plus.svg);
-  background-color: white;
-  background-position: center;
-  background-size: 15px;
-  border: none;
-  cursor: pointer;
-}
-.btn-m {
-  display: inline;
-  align-items: flex-start;
-  justify-content: flex-start;
-  text-align: center;
-  width: 33%;
-}
-.btn-l {
-  /* margin-top: 3px; */
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  text-align: center;
-  width: 30%;
-  cursor: pointer;
-}
-.btn-l input {
-  box-shadow: none;
-  width: 15px;
-  background-image: url(../image/icon/minus.svg);
-  background-color: white;
-  background-position: center;
-  background-size: 15px;
-  border: none;
-  cursor: pointer;
-}
-.quantity-num {
-  display: inline;
-  font-family: iransansnum;
-  font-size: 1em;
-  width: 20px;
-  height: 18px;
-  border: none;
-  appearance: textfield;
-  text-align: center;
-  background-color: none;
-}
+
 /*****************/
 .off-price::after {
   font-family: iransansnum;
@@ -857,6 +781,7 @@ td {
   transform: rotate(180deg);
   transform: rotatex(180deg);
 }
+/************************/
 .question {
   width: 95%;
   margin-top: 2em;
@@ -1070,9 +995,7 @@ td {
 .active-display {
   display: block;
 }
-.container {
-  max-width: 968px;
-}
+
 @media screen and (max-width: 680px) {
   .q-name-email {
     margin-right: 0px;

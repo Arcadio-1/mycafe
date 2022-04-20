@@ -6,7 +6,6 @@ export const swiper = new Swiper(".swiper", {
   spaceBetween: 0,
   watchSlidesProgress: true,
   grabCursor: false,
-  speed: 800,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",

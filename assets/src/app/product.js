@@ -5,11 +5,13 @@ import { explorImg } from "./productIn/product-img/explorImg.js";
 import { sliderrender } from "./productIn/product-img/sliderrender.js";
 import { swiper } from "./productIn/swiper.js";
 import { addbasket } from "./productIn/addBascket.js";
+import { getcooki } from "./productIn/getcooki";
 
 const loadrAll = async () => {
   tabsExplore();
   plusMin();
-  await fetchProduct("d8").then((data) => {
+  const theID = getcooki();
+  await fetchProduct(theID).then((data) => {
     sliderrender(data);
     addbasket(data);
     // console.log(data);

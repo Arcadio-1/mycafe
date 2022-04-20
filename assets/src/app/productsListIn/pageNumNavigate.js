@@ -1,5 +1,5 @@
 import { renderProducts } from "./renderProducts";
-
+import { creatcooki } from "./creatcooki";
 export const pageNavigate = (prodList) => {
   const btnContainer = document.querySelector(".page-num-btn-container");
   btnContainer.addEventListener("click", (e) => {
@@ -26,5 +26,6 @@ export const pageNavigate = (prodList) => {
       }
       renderProducts(prodList, index);
     }
+    creatcooki();
   });
 };
