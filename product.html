@@ -16,10 +16,8 @@
         ></script>
         <script src="./assets/scripts/productStyles.bundle.js"defer ></script>
         <!-- <link rel="stylesheet" href="./assets/src/css/test.css"> -->
+            <title>کافه ترانه</title>
         
-        
-
-    <title>کافه ترانه</title>
   </head>
   <body>
     <div class="uper">
@@ -374,11 +372,11 @@
             </div>
             <div class="down-tab comment-and-qustion" data-tab="comments">
               <div class="cq-nav">
-              <div class="nav-comment"><a href="#">نظرات</a></div>
-              <div class="nav-question"> <a href="#">پرسش و پاسخ</a></div>
+              <div class="cq-tab nav-comment p-down-active-tab" data-tab="comment">نظرات</div>
+              <div class="cq-tab nav-question" data-tab="question">پرسش</div>
               </div>
               <div class="cq-container">
-                <div class="comment">
+                <div class="cq-down-tab comment active-display" data-tab="comment">
                     <div class="submit-comment-area">
                       <p>جهت شرکت در نظر سنجی باید محصول را خریداری کرده باشید!</p>
                       <div class="submit-comment-form">
@@ -388,66 +386,107 @@
                             <div class="rate-1">
                             <div><span>بسته بندی</span></div>
                             <div class="star-box">
-                              <input type="radio" name="star-1" id="star1-1"><label for="star1-1"></label>
-                              <input type="radio" name="star-1" id="star1-2"><label for="star1-2"></label>
-                              <input type="radio" name="star-1" id="star1-3"><label for="star1-3"></label>
-                              <input type="radio" name="star-1" id="star1-4"><label for="star1-4"></label>
-                              <input type="radio" name="star-1" id="star1-5"><label for="star1-5"></label>
+                              <input type="radio" name="package" id="star1-1" data-in="5">
+                              <label for="star1-1"></label>
+                              <input type="radio" name="package" id="star1-2" data-in="4">
+                              <label for="star1-2"></label>
+                              <input type="radio" name="package" id="star1-3" data-in="3">
+                              <label for="star1-3"></label>
+                              <input type="radio" name="package" id="star1-4" data-in="2">
+                              <label for="star1-4"></label>
+                              <input type="radio" name="package" id="star1-5" data-in="1">
+                              <label for="star1-5"></label>
                             </div>
                           </div>
                           <div class="rate-2">
                             <div><span>کیفیت</span></div>
                             <div class="star-box">
-                              <input type="radio" name="star-2" id="star2-1"><label for="star2-1"></label>
-                              <input type="radio" name="star-2" id="star2-2"><label for="star2-2"></label>
-                              <input type="radio" name="star-2" id="star2-3"><label for="star2-3"></label>
-                              <input type="radio" name="star-2" id="star2-4"><label for="star2-4"></label>
-                              <input type="radio" name="star-2" id="star2-5"><label for="star2-5"></label>
+                              <input type="radio" name="quality" id="star2-1" data-in="5">
+                              <label for="star2-1"></label>
+                              <input type="radio" name="quality" id="star2-2" data-in="4">
+                              <label for="star2-2"></label>
+                              <input type="radio" name="quality" id="star2-3" data-in="3">
+                              <label for="star2-3"></label>
+                              <input type="radio" name="quality" id="star2-4" data-in="2">
+                              <label for="star2-4"></label>
+                              <input type="radio" name="quality" id="star2-5" data-in="1">
+                              <label for="star2-5"></label>
                             </div>
                           </div>
                           <div class="rate-3">
+                            <div><span>رضایت</span></div>
+                            <div class="star-box">
+                              <input type="radio" name="satisfaction" id="star3-1" data-in="5">
+                              <label for="star3-1"></label>
+                              <input type="radio" name="satisfaction" id="star3-2" data-in="4">
+                              <label for="star3-2"></label>
+                              <input type="radio" name="satisfaction" id="star3-3" data-in="3">
+                              <label for="star3-3"></label>
+                              <input type="radio" name="satisfaction" id="star3-4" data-in="2">
+                              <label for="star3-4"></label>
+                              <input type="radio" name="satisfaction" id="star3-5" data-in="1">
+                              <label for="star3-5"></label>
+                            </div>
+                          </div>
+                          <div class="rate-4">
                             <div><span>ترشی</span></div>
                             <div class="star-box">
-                              <input type="radio" name="star-3" id="star3-1"><label for="star3-1"></label>
-                              <input type="radio" name="star-3" id="star3-2"><label for="star3-2"></label>
-                              <input type="radio" name="star-3" id="star3-3"><label for="star3-3"></label>
-                              <input type="radio" name="star-3" id="star3-4"><label for="star3-4"></label>
-                              <input type="radio" name="star-3" id="star3-5"><label for="star3-5"></label>
+                              <input type="radio" name="pickle" id="star4-1" data-in="5">
+                              <label for="star4-1"></label>
+                              <input type="radio" name="pickle" id="star4-2" data-in="4">
+                              <label for="star4-2"></label>
+                              <input type="radio" name="pickle" id="star4-3" data-in="3">
+                              <label for="star4-3"></label>
+                              <input type="radio" name="pickle" id="star4-4" data-in="2">
+                              <label for="star4-4"></label>
+                              <input type="radio" name="pickle" id="star4-5" data-in="1">
+                              <label for="star4-5"></label>
                             </div>
                           </div>
-                            <div class="rate-4">
+                            <div class="rate-5">
                             <div><span>کافئین</span></div>
                             <div class="star-box">
-                              <input type="radio" name="star-4" id="star4-1"><label for="star4-1"></label>
-                              <input type="radio" name="star-4" id="star4-2"><label for="star4-2"></label>
-                              <input type="radio" name="star-4" id="star4-3"><label for="star4-3"></label>
-                              <input type="radio" name="star-4" id="star4-4"><label for="star4-4"></label>
-                              <input type="radio" name="star-4" id="star4-5"><label for="star4-5"></label>
+                              <input type="radio" name="caffeine" id="star5-1" data-in="5">
+                              <label for="star5-1"></label>
+                              <input type="radio" name="caffeine" id="star5-2" data-in="4">
+                              <label for="star5-2"></label>
+                              <input type="radio" name="caffeine" id="star5-3" data-in="3">
+                              <label for="star5-3"></label>
+                              <input type="radio" name="caffeine" id="star5-4" data-in="2">
+                              <label for="star5-4"></label>
+                              <input type="radio" name="caffeine" id="star5-5" data-in="1">
+                              <label for="star5-5"></label>
                             </div>
                           </div>
-                          <div class="rate-5">
+                          <div class="rate-6">
                             <div><span>عطرو بو</span></div>
                             <div class="star-box">
-                              <input type="radio" name="star-5" id="star5-1"><label for="star5-1"></label>
-                              <input type="radio" name="star-5" id="star5-2"><label for="star5-2"></label>
-                              <input type="radio" name="star-5" id="star5-3"><label for="star5-3"></label>
-                              <input type="radio" name="star-5" id="star5-4"><label for="star5-4"></label>
-                              <input type="radio" name="star-5" id="star5-5"><label for="star5-5"></label>
+                              <input type="radio" name="perfume" id="star6-1" data-in="5">
+                              <label for="star6-1"></label>
+                              <input type="radio" name="perfume" id="star6-2" data-in="4">
+                              <label for="star6-2"></label>
+                              <input type="radio" name="perfume" id="star6-3" data-in="3">
+                              <label for="star6-3"></label>
+                              <input type="radio" name="perfume" id="star6-4" data-in="2">
+                              <label for="star6-4"></label>
+                              <input type="radio" name="perfume" id="star6-5" data-in="1">
+                              <label for="star6-5"></label>
                             </div>
                           </div>
                           </div>
                           <div style="display: flex;"><p>متن نظر شما</p><span>(اجباری)</span></div>
                           <div class="textarea-submit">
-                            <textarea name="" id="" rows="8"></textarea>
+                            <textarea name="" id="comment-text" rows="8"></textarea>
                             <div class="submit-c-area">
-                            <div><input type="checkbox" name="unanimous" id="unanimous">
-                              <label for="unanimous">ارسال دیدگاه بصورت ناشناس</label></div>
+                            <div>
+                              <input type="checkbox" name="unanimous" id="unanimous">
+                              <label for="unanimous">ارسال دیدگاه بصورت ناشناس</label>
+                            </div>
                               <input type="submit" value="ثبت دیدگاه" class="submit-cq-btn">
                             </div>
                           </div>
                         </form>
                       </div>
-
                     </div>
                       <div class="cq-rate">
                         <div class="cq-rate-box">
@@ -466,6 +505,14 @@
                             <div class="mizan">
                               <span class="mizan-in" style="width: 80%"
                                 ><span>8</span>
+                              </span>
+                            </div>
+                          </div>
+                          <div class="mizan-box">
+                            <span class="mizan-lbl">رضایت</span>
+                            <div class="mizan">
+                              <span class="mizan-in" style="width: 90%"
+                                ><span>9</span>
                               </span>
                             </div>
                           </div>
@@ -498,102 +545,13 @@
                       </div>
                       <div class="comment-list-area">
                         <div class="c-list-title">
-                          <p><span class="comment-counter">175 دیدگاه</span><span> برای قهوه اسپرسو بن مانو مدل آرتیمان وزن 250 گرم</span></p>
+                          <p><span class="comment-counter">175 دیدگاه</span><span> برای قهوه اسپرسو بن مانو مدل آرتیمان وزن 250 گرم</span><span> ثبت شده </span></p>
                         </div>
-                        <div class="comment-list-content">
-                          <div class="comment-content-card">
-                            <div class="user-data">
-                              <div class="user-img-box">
-                                <img src="./assets/src/image/icon/Compare.png" alt="">
-                              </div>
-                              <div class="comment-list-username">
-                                <span>آرکادیو الکساندر</span>
-                                <span>12 آبان 1400</span>
-                              </div>
-                            </div>
-                            <div class="user-text">
-                              <p>سلام و عرض ادب بنده خودم این گوشی رو ندارم ولی یکی از دوستان بنده داره تا اینجا که راضیه ولی تنها مشکلش داغی زیاد این گوشی هست من خودمم باهاش کار کردم واقعا خیلی داغ می‌کنه مخصوصا موقع گیم زدن و وقتی که تو نرم افزار دوربین هستی کلا خیلی داغ می‌کنه. ولی اصلی ترین نقطه قوت این گوشی که همه گوشیای پرچمدار سامسونگ از قدیم همین امتیاز رو داشتن صفحه نمایش محشرررررررررررره جوری که از نگاه کردن بهش سیر نمیشی. دوربینش هم نسبت به نسخه اولترا ضعیف تره ولی خب بازم دوربین محشری داره به هر حال پرچمداره دیگه. باتریش هم میتونست بهتر باشه ولی عملکردش خوبه بقیه موارد هم عالیه و اینکه نمی‌دونم چرا من کلا نسخه های پلاس سری اس سامسونگ رو به نسخه اولترا ترجیح میدم کلا بیشتر دوستشون دارم. امیدوارم نظرم به خریدتون کمک کرده باشه. یاعلی و خدا یار و نگهدارتون. لایک هم یادتون نره</p>
-                            </div>
-                            <div class="user-comment-down">
-                              <div class="like-comment">
-                                <span>امتیاز شما به این نظر:</span>
-                                <div class="stars-like">
-                                <div class="c-like-stars">
-                                  <input type="radio" name="like-c" id="like-c-1">
-                                  <label for="like-c-1"></label>
-                                  <input type="radio" name="like-c" id="like-c-2">
-                                  <label for="like-c-2"></label>
-                                  <input type="radio" name="like-c" id="like-c-3">
-                                  <label for="like-c-3"></label>
-                                  <input type="radio" name="like-c" id="like-c-4">
-                                  <label for="like-c-4"></label>
-                                  <input type="radio" name="like-c" id="like-c-5">
-                                  <label for="like-c-5"></label>
-                                </div>
-                                <div class="like-comment">
-                                  <div class="like-hand-area"><a href="#" class="like-hand">12</a></div>
-                                  <div class="dislike-hand-area"><a href="#" class="dislike-hand">3</a></div>
-                                  
-                                </div>
-                                </div>
-
-
-                              </div>
-                              <div class="user-rate">
-                          <div class="c-rate-box">
-                          <div class="rate-box-main rate-box-main-c">
-                            <div class="mizan-box">
-                              <span class="mizan-lbl">بسته بندی</span>
-                              <div class="mizan mizan-c">
-                                <span class="mizan-in" style="width: 100%"
-                                  ><span class="mizan-num">10</span>
-                                </span>
-                              </div>
-                            </div>
-                            <div class="mizan-box">
-                              <span class="mizan-lbl">کیفیت</span>
-                              <div class="mizan mizan-c">
-                                <span class="mizan-in" style="width: 80%"
-                                  ><span>8</span>
-                                </span>
-                              </div>
-                            </div>
-                            <div class="mizan-box">
-                              <span class="mizan-lbl">کافئین</span>
-                              <div class="mizan mizan-c">
-                                <span class="mizan-in" style="width: 70%"
-                                  ><span>7</span>
-                                </span>
-                              </div>
-                            </div>
-                            <div class="mizan-box">
-                              <span class="mizan-lbl">ترشی</span>
-                              <div class="mizan mizan-c">
-                                <span class="mizan-in" style="width: 50%"
-                                  ><span>5</span>
-                                </span>
-                              </div>
-                            </div>
-                            <div class="mizan-box">
-                          <span class="mizan-lbl">عطرو بو</span>
-                          <div class="mizan mizan-c">
-                            <span class="mizan-in" style="width: 40%"
-                              ><span>4</span>
-                            </span>
-                          </div>
-                            </div>
-                          </div>
-                          </div>
-                              </div>
-
-                            </div>
-
-
-                          </div>
+                        <div class="comments-list-container">
                         </div>
                       </div>
                 </div>
-                <div class="question">
+                <div class="cq-down-tab question" data-tab="question">
                   <div class="q-submit-form">
                     <form action="">
                       <div class="q-name-email">
@@ -748,7 +706,7 @@
             <div class="swiper-scrollbar"></div>
           </div>
       </div>
-    </div>
+      </div>
     </div>
     <footer>
       <div class="container">
