@@ -8,6 +8,7 @@ import { sliderrender } from "./productIn/product-img/sliderrender.js";
 import { addbasket } from "./productIn/addBascket.js";
 import { getcooki } from "./productIn/getcooki";
 import { addComment } from "./productIn/addComment";
+import { openAnswerBox } from "./productIn/answerQuestion";
 
 window.addEventListener("DOMContentLoaded", () => {
   const loadrAll = async () => {
@@ -22,6 +23,7 @@ window.addEventListener("DOMContentLoaded", () => {
     });
     explorImg();
     addComment();
+    openAnswerBox();
   };
   loadrAll();
 });
