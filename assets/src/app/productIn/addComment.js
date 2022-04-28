@@ -1,28 +1,11 @@
-let db;
+import { connectToDb } from "./indexedDb";
+
 const commentsContainer = document.querySelector(".comments-list-container");
-export const addComment = () => {
+export const addComment = (db) => {
+  // console.dir(db);
   const submitCommentForm = document.querySelector(".submit-comment-form");
   const subComment = submitCommentForm.querySelector(".submit-cq-btn");
-
   //////////////////////create indexedDB
-
-  const dbRequest = indexedDB.open("comments&question", 7);
-  dbRequest.onsuccess = function (event) {
-    db = event.target.result;
-    renderDb();
-  };
-
-  dbRequest.onupgradeneeded = function (event) {
-    db = event.target.result;
-    alert("onupgradeneeded");
-    const commentsTb = db.createObjectStore("comments", { keyPath: "id" });
-    // commentsTb.transaction.oncomplete = function (event) {
-    // };
-  };
-
-  dbRequest.onerror = function (event) {
-    alert(`error ${event}`);
-  };
 
   //click***********
   subComment.addEventListener("click", (e) => {
@@ -46,7 +29,7 @@ export const addComment = () => {
       list.push(item.dataset.in);
     });
     list.push(text, nowDate, nowTime);
-    // console.log(list);
+    console.log(list);
     const creatDiv = document.createElement("div");
     creatDiv.classList.add("comment-list-content");
     creatDiv.innerHTML = `<div class="comment-content-card">
@@ -56,11 +39,11 @@ export const addComment = () => {
                               </div>
                               <div class="comment-list-username">
                                 <span>آرکادیو الکساندر</span>
-                                <span>${list[6]} ${list[7]}</span>
+                                <span>${list[7]} ${list[8]}</span>
                               </div>
                             </div>
                             <div class="user-text">
-                              <p>${list[8]}</p>
+                              <p>${list[6]}</p>
                             </div>
                             <div class="user-comment-down">
                               <div class="delete-comment">
@@ -157,13 +140,14 @@ export const addComment = () => {
                             </div>
                           </div>`;
     commentsContainer.prepend(creatDiv);
-    deleteComment();
+    deleteComment(db);
     if (!db) {
       return;
     }
     const commentsStore = db
       .transaction("comments", "readwrite")
       .objectStore("comments");
+
     commentsStore.add({
       id: commentId,
       package: list[0],
@@ -179,7 +163,8 @@ export const addComment = () => {
   });
 };
 
-const renderDb = () => {
+export const renderDb = (db) => {
+  // console.dir(db);
   const commentsStore = db
     .transaction("comments", "readwrite")
     .objectStore("comments");
@@ -304,20 +289,40 @@ const renderDb = () => {
       `;
       commentsContainer.prepend(createDiv);
     });
-    deleteComment();
+    deleteComment(db);
   };
 };
 
-const deleteComment = () => {
+export const deleteComment = (db) => {
   const deleteBtn = document.querySelectorAll(".delete-comment-btn");
   deleteBtn.forEach((item) => {
     item.addEventListener("click", (e) => {
       let dataTask = e.target.getAttribute("data-keyid");
-      const commentsStore = db.transaction("comments", "readwrite");
-      let request = commentsStore.objectStore("comments").delete(dataTask);
-      commentsStore.oncomplete = function () {
+      // console.dir(db);
+      const request = db
+        .transaction("comments", "readwrite")
+        .objectStore("comments")
+        .clear();
+      request.onsuccess = () => {
         e.target.parentNode.parentNode.parentNode.parentNode.remove();
+      };
+      request.onerror = (err) => {
+        console.error(`Error to delete student: ${err}`);
       };
     });
   });
 };
+
+// const deleteComment = (db) => {
+//   const deleteBtn = document.querySelectorAll(".delete-comment-btn");
+//   deleteBtn.forEach((item) => {
+//     item.addEventListener("click", (e) => {
+//       let dataTask = e.target.getAttribute("data-keyid");
+//       const commentsStore = db.transaction("comments", "readwrite");
+//       let request = commentsStore.objectStore("comments").delete(dataTask);
+//       commentsStore.oncomplete = function () {
+//         e.target.parentNode.parentNode.parentNode.parentNode.remove();
+//       };
+//     });
+//   });
+// };

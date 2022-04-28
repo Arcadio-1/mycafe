@@ -7,7 +7,7 @@ import { explorImg } from "./productIn/product-img/explorImg.js";
 import { sliderrender } from "./productIn/product-img/sliderrender.js";
 import { addbasket } from "./productIn/addBascket.js";
 import { getcooki } from "./productIn/getcooki";
-import { addComment } from "./productIn/addComment";
+import { connectToDb } from "./productIn/indexedDb";
 import { openAnswerBox } from "./productIn/answerQuestion";
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -22,7 +22,7 @@ window.addEventListener("DOMContentLoaded", () => {
       addbasket(data);
     });
     explorImg();
-    addComment();
+    connectToDb();
     openAnswerBox();
   };
   loadrAll();

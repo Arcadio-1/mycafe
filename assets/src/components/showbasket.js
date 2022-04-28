@@ -1,4 +1,6 @@
+import { rendercard } from "../app/productIn/addBascket.js";
 export const showbasket = () => {
+  rendercard();
   const basketBtn = document.querySelector(".show-basket-btn");
   const basketcard = document.querySelector(".show-basket");
   const nav = document.querySelector(".uper");
@@ -23,4 +25,5 @@ export const showbasket = () => {
       }
     });
   });
+  // const list = getLocalStorge();
 };

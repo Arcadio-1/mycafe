@@ -25,14 +25,21 @@ export const addbasket = (prod) => {
   });
 };
 
-const rendercard = () => {
+export const rendercard = () => {
   const numOfProdInCard = document.querySelector(".sh-b-up-num");
+  const totalPrice = document.querySelector(".sh-b-totalPrice");
+  let total = 0;
   const list = getLocalStorge();
+  const numOfprodInNav = document.querySelector(".order-num");
+  numOfprodInNav.textContent = list.length;
   numOfProdInCard.textContent = list.length;
   const cardContainer = document.querySelector(".sh-b-mid");
-  const htmlCode = list
-    .map((item) => {
-      return `
+  cardContainer.innerHTML = ``;
+  list.map((item) => {
+    total += item.number * (item.price - (item.offPersent / 100) * item.price);
+    console.log(total, item.number, item.offPersent, item.price);
+    const createArtical = document.createElement("article");
+    createArtical.innerHTML = `
               <article>
               <div class="sh-b-mid-right">
               <img src="${item.imageLink}" class="sh-b-mid-img" alt="">
@@ -73,25 +80,37 @@ const rendercard = () => {
               ${new Intl.NumberFormat("en-US", {
                 style: "decimal",
               }).format(
-                Math.ceil(item.number * (item.offPersent * item.price))
+                Math.ceil(item.number * ((item.offPersent / 100) * item.price))
               )}
               تومان تخفیف </p>
               <p class="sh-b--mid-price">${new Intl.NumberFormat("en-US", {
                 style: "decimal",
               }).format(
                 Math.ceil(
-                  item.number * (item.price - item.offPersent * item.price)
+                  item.number *
+                    (item.price - (item.offPersent / 100) * item.price)
                 )
               )}<span> تومان </span></p>
             </div>
+            <button class="delete-prod-frombsket-btn" data-keyid="${
+              item.id
+            }"></button>
             </article>
     `;
-    })
-    .join("");
-  cardContainer.innerHTML = htmlCode;
+    cardContainer.appendChild(createArtical);
+    const deleteBtn = createArtical.querySelector(".delete-prod-frombsket-btn");
+    deleteBtn.addEventListener("click", (e) => {
+      const key = e.target.dataset.keyid;
+      console.log(`${key} is deleted`);
+      deleteprod(key);
+    });
+  });
+  totalPrice.textContent = new Intl.NumberFormat("en-US", {
+    style: "decimal",
+  }).format(Math.ceil(total));
 };
 
-const getLocalStorge = () => {
+export const getLocalStorge = () => {
   return localStorage.getItem("list")
     ? JSON.parse(localStorage.getItem("list"))
     : [];
@@ -117,7 +136,20 @@ const creatItem = (prod) => {
     wight: selected.value,
     asyabText: asyabText,
     asyabValue: asyabValue,
-    number: quantity.value,
+    number: parseInt(quantity.value),
   };
   return product;
+};
+
+const deleteprod = (key) => {
+  let list = getLocalStorge();
+  list = list.filter((item) => {
+    if (item.id !== key) {
+      return item;
+    }
+  });
+  const prodTarget = JSON.stringify(list);
+  localStorage.setItem("list", prodTarget);
+
+  rendercard();
 };

@@ -142,6 +142,20 @@ a {
 .notif :nth-child(3) {
   width: 35px;
 }
+.show-basket-btn {
+  position: relative;
+}
+.order-num {
+  position: absolute;
+  top: 25px;
+  right: 10px;
+  background-color: #d52405;
+  border-radius: 50%;
+  color: white;
+  font-family: iransansnum;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
 /***************nav links***************/
 .nav-ul-container {
   transition: all 0.25s ease-in-out;
@@ -516,6 +530,14 @@ strong {
   box-shadow: 2px 2px 5px gray;
   background-color: tomato;
   border-radius: 10px;
+}
+.delete-prod-frombsket-btn {
+  background-image: url(../image/icon/delete-icon.svg);
+  width: 2rem;
+  height: 2rem;
+  background-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
 }
 .sh-b-totalPrice {
   color: black;
