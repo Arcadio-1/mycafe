@@ -21,7 +21,7 @@
 // @import "~bootstrap/scss/bootstrap";
 * {
   --dark: #616161;
-  --text-color: #565656;
+  --text-color: #3a3a3a;
   --light: #ececec;
   --upbgcolor: rgba(235, 235, 235, 0.719);
   box-sizing: border-box;
@@ -40,7 +40,7 @@ a {
   margin-right: auto;
   flex-direction: column;
   width: 95vw;
-  max-width: 1364px;
+  max-width: 1336px;
   color: var(--text-color);
 }
 .uper {
@@ -58,7 +58,7 @@ a {
   margin-right: auto;
   flex-direction: column;
   width: 95vw;
-  max-width: 1364px;
+  max-width: 1336px;
   color: var(--text-color);
   // width: 100%;
 }
@@ -66,8 +66,8 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 968px;
-  // width: 100%;
+  max-width: 1336px;
+  width: 100%;
 }
 .nav-fix {
   background-color: rgb(235, 235, 235);
@@ -80,8 +80,8 @@ a {
 }
 .log {
   margin-right: 5px;
-  margin-left: auto;
-  width: 150px;
+  // margin-left: auto;
+  width: 108px;
   display: flex;
   font-size: 1rem;
 }
@@ -92,9 +92,10 @@ a {
 .search-box {
   margin: 0 0 0 auto;
   display: flex;
-  width: 40rem;
+  width: 100%;
+  min-width: 20rem;
+  max-width: 30rem;
   height: 3rem;
-
   background-color: var(--light);
   border-radius: 30px;
   border: 2px solid gray;
@@ -126,41 +127,46 @@ a {
   margin-right: 2em;
   margin-left: 2em;
 }
-.notif :nth-child(1) {
-  margin-top: auto;
-  width: 30px;
-}
 .notif button {
   cursor: pointer;
   border: transparent;
   background-color: transparent;
-}
-.notif :nth-child(2) {
-  margin: auto 5px 0 5px;
-  width: 30px;
-}
-.notif :nth-child(3) {
-  width: 35px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 .show-basket-btn {
+  margin-right: 4px;
   position: relative;
+  background-image: url("../image/icon/basket.svg");
+}
+.notid-compar-btn {
+  background-image: url("../image/icon/Compare.png");
+}
+.notif-like-btn {
+  background-image: url("../image/icon/heart.svg");
 }
 .order-num {
   position: absolute;
-  top: 25px;
+  top: 20px;
   right: 10px;
   background-color: #d52405;
   border-radius: 50%;
   color: white;
   font-family: iransansnum;
-  font-size: 1.1rem;
+  font-size: 14px;
   font-weight: 600;
+  width: 100%;
 }
 /***************nav links***************/
 .nav-ul-container {
   transition: all 0.25s ease-in-out;
   height: 25px;
   overflow: hidden;
+  margin-right: auto;
+  margin-left: auto;
 }
 .nav-2 {
   // margin-top: 4rem;
@@ -549,7 +555,7 @@ strong {
 }
 //***********end of show basket****/
 .container {
-  max-width: 968px;
+  max-width: 1336px;
 }
 //*********quant**********/
 .quantity {
@@ -642,9 +648,13 @@ strong {
     flex-wrap: wrap;
   }
   .search-box {
+    // margin-right: auto;
+    // margin-left: auto;
+    // order: 10;
+  }
+  .log {
     margin-right: auto;
-    margin-left: auto;
-    order: 10;
+    margin: left 0px;
   }
   .nav-2 {
     display: block;

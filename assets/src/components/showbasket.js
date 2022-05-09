@@ -5,6 +5,7 @@ export const showbasket = () => {
   const basketcard = document.querySelector(".show-basket");
   const nav = document.querySelector(".uper");
   const container = document.querySelectorAll(".container");
+
   basketBtn.addEventListener("mouseover", () => {
     const basketBtnPosition = basketBtn.getBoundingClientRect();
     basketcard.style.left = `${basketBtnPosition.left}px`;
@@ -14,7 +15,7 @@ export const showbasket = () => {
     basketcard.classList.add("display-basket-card");
   });
   nav.addEventListener("mouseover", (e) => {
-    if (!e.target.parentElement.classList.contains("show-basket-btn")) {
+    if (!e.target.classList.contains("show-basket-btn")) {
       basketcard.classList.remove("display-basket-card");
     }
   });
