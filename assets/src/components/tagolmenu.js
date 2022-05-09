@@ -1,8 +1,12 @@
-const menuBtn = document.getElementById("hamberger-menu");
-const menuLinks = document.querySelector(".nav2-ul");
-const menuLinksContiner = document.querySelector(".nav-ul-container");
-let tog = false;
 export const tagolmenu = () => {
+  console.log("2");
+  const menuBtn = document.getElementById("menu");
+  console.dir(menuBtn);
+  const menuLinks = document.querySelector(".nav2-ul");
+  const menuLinksContiner = document.querySelector(".nav-ul-container");
+  const header = document.querySelector("header");
+  let tog = false;
+
   menuBtn.addEventListener("click", () => {
     console.log(menuLinksContiner);
     const position = menuLinks.getBoundingClientRect();
@@ -11,10 +15,14 @@ export const tagolmenu = () => {
     // menuLinksContiner.classList.toggle("display-flex");
     if (!tog) {
       tog = true;
-      return (menuLinksContiner.style.height = `${position.height}px`);
+      menuLinksContiner.style.height = `${position.height}px`;
+      header.style.height = `${position.height}px`;
+      return;
     } else if (tog) {
       tog = false;
-      return (menuLinksContiner.style.height = "0px");
+      menuLinksContiner.style.height = "0px";
+      header.style.height = `0px`;
+      return;
     }
     console.log(tog);
   });
@@ -23,10 +31,13 @@ export const tagolmenu = () => {
     () => {
       const linkContainerClientRect = menuLinksContiner.getBoundingClientRect();
       if (linkContainerClientRect.width > 830) {
+        header.style.height = `auto`;
         return (menuLinksContiner.style.height = "25px");
       } else if (linkContainerClientRect.width < 880) {
         tog = false;
-        return (menuLinksContiner.style.height = "0px");
+        menuLinksContiner.style.height = "0px";
+        header.style.height = `0px`;
+        return;
       }
     },
     true

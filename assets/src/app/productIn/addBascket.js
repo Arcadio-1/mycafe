@@ -26,6 +26,25 @@ export const addbasket = (prod) => {
 };
 
 export const rendercard = () => {
+  const basketConatiner = document.querySelector(".show-basket");
+  basketConatiner.innerHTML = `<div class="sh-b-up">
+        <p><span class="sh-b-up-num">4</span><span> کالا </span></p>
+        <a class="sh-b-up-go" href="./order.html">مشاهده سبد خرید</a>
+      </div>
+      <div class="sh-b-mid"></div>
+      <div class="sh-b-down">
+        <div class="sh-b-down-right">
+          <p>مبلغ قابل پرداخت</p>
+          <p>
+            <span class="sh-b-totalPrice">755,650</span><span> تومان </span>
+          </p>
+        </div>
+        <div class="sh-b-down-left">
+          <a href="./order.html"
+            ><button class="submit-bascket">ثبت سفارش</button></a
+          >
+        </div>
+      </div>`;
   const numOfProdInCard = document.querySelector(".sh-b-up-num");
   const totalPrice = document.querySelector(".sh-b-totalPrice");
   let total = 0;

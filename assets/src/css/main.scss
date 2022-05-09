@@ -63,34 +63,31 @@ a {
   // width: 100%;
 }
 .nav-1 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
   max-width: 1336px;
   width: 100%;
+  // justify-content: center;
+  grid-template-areas: "logo logo search search search log log notif";
 }
 .nav-fix {
   background-color: rgb(235, 235, 235);
   z-index: 10;
   position: fixed;
-  // position: absolute;
   width: 100%;
   max-width: 100%;
-  // max-width: 968px;
 }
-.log {
-  margin-right: 5px;
-  // margin-left: auto;
-  width: 108px;
-  display: flex;
-  font-size: 1rem;
+.logo {
+  margin-left: 0;
+  max-width: 111px;
+  max-height: 63px;
+  grid-area: logo;
 }
-.log span {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
+.logo img {
+  max-width: 111px;
+  max-height: 63px;
 }
 .search-box {
-  margin: 0 0 0 auto;
+  margin: 0 auto 0 auto;
   display: flex;
   width: 100%;
   min-width: 20rem;
@@ -99,6 +96,7 @@ a {
   background-color: var(--light);
   border-radius: 30px;
   border: 2px solid gray;
+  grid-area: search;
 }
 .search-box img {
   margin: 0.5rem 1rem 0.5rem 0.1rem;
@@ -111,23 +109,29 @@ a {
   max-width: 500px;
   margin: 0.5rem;
 }
-.logo {
-  margin-left: 0;
-  max-width: 111px;
-  max-height: 63px;
+.log {
+  margin-right: auto;
+  width: 108px;
+  display: flex;
+  font-size: 1rem;
+  grid-area: log;
+  justify-content: center;
+  align-items: center;
 }
-.logo img {
-  max-width: 111px;
-  max-height: 63px;
+.log span {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 .notif {
   display: flex;
   opacity: 90%;
   color: red;
-  margin-right: 2em;
-  margin-left: 2em;
+  grid-area: notif;
+  align-items: center;
+  justify-content: center;
 }
 .notif button {
+  border: 2px solid red;
   cursor: pointer;
   border: transparent;
   background-color: transparent;
@@ -138,16 +142,15 @@ a {
   height: 1.5rem;
 }
 .show-basket-btn {
-  margin-right: 4px;
   position: relative;
   background-image: url("../image/icon/basket.svg");
 }
-.notid-compar-btn {
-  background-image: url("../image/icon/Compare.png");
-}
-.notif-like-btn {
-  background-image: url("../image/icon/heart.svg");
-}
+// .notid-compar-btn {
+//   background-image: url("../image/icon/Compare.png");
+// }
+// .notif-like-btn {
+//   background-image: url("../image/icon/heart.svg");
+// }
 .order-num {
   position: absolute;
   top: 20px;
@@ -159,6 +162,23 @@ a {
   font-size: 14px;
   font-weight: 600;
   width: 100%;
+}
+#menu {
+  display: none;
+  grid-area: menu;
+  // margin-right: 2rem;
+}
+#hamberger-menu {
+  cursor: pointer;
+  border: transparent;
+  background: transparent;
+  font-size: 2rem;
+  height: 1rem;
+  width: 1rem;
+}
+#menu:hover {
+  transition: all 0.3s linear;
+  border: none;
 }
 /***************nav links***************/
 .nav-ul-container {
@@ -191,22 +211,6 @@ a {
   color: #383838;
   font-family: iransansbold;
   font-weight: 100;
-}
-#menu {
-  display: none;
-  margin-right: 2rem;
-}
-#hamberger-menu {
-  cursor: pointer;
-  border: transparent;
-  background: transparent;
-  font-size: 2rem;
-  height: 1rem;
-  width: 1rem;
-}
-#menu:hover {
-  transition: all 0.3s linear;
-  border: none;
 }
 /*********************** best-sell START ***********************/
 .best-sell {
@@ -446,6 +450,7 @@ strong {
   direction: rtl;
 }
 .sh-b-up-go {
+  cursor: pointer;
   font-family: iranyekan-bold;
   color: #006eb8;
 }
@@ -529,6 +534,7 @@ strong {
   color: #565656;
 }
 .submit-bascket {
+  cursor: pointer;
   font-family: iransans;
   padding: 1rem 1.7rem;
   color: white;
@@ -646,18 +652,43 @@ strong {
 @media screen and (max-width: 875px) {
   .nav-1 {
     flex-wrap: wrap;
+    grid-template-areas:
+      "logo logo log log"
+      "menu search search notif";
+  }
+  .logo {
+    margin-left: auto;
   }
   .search-box {
-    // margin-right: auto;
-    // margin-left: auto;
-    // order: 10;
+    min-width: 10rem;
+    margin: 0px;
   }
   .log {
+    margin-left: 1rem;
+  }
+  #menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    // margin-right: 1rem;
+  }
+  #menu i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .notif {
     margin-right: auto;
-    margin: left 0px;
+    margin-left: 1rem;
   }
   .nav-2 {
     display: block;
+  }
+  header {
+    transition: all 0.25s ease-in-out;
+    height: 0px;
   }
   .nav-ul-container {
     transition: all 0.25s ease-in-out;
@@ -677,9 +708,6 @@ strong {
   }
   .nav-2 li {
     line-height: 2em;
-  }
-  #menu {
-    display: flex;
   }
   .phone-adress,
   .handi-link,
