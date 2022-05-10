@@ -1,18 +1,12 @@
 export const tagolmenu = () => {
-  console.log("2");
   const menuBtn = document.getElementById("menu");
-  console.dir(menuBtn);
   const menuLinks = document.querySelector(".nav2-ul");
   const menuLinksContiner = document.querySelector(".nav-ul-container");
   const header = document.querySelector("header");
   let tog = false;
-
   menuBtn.addEventListener("click", () => {
     console.log(menuLinksContiner);
     const position = menuLinks.getBoundingClientRect();
-    console.log(tog);
-
-    // menuLinksContiner.classList.toggle("display-flex");
     if (!tog) {
       tog = true;
       menuLinksContiner.style.height = `${position.height}px`;
@@ -24,7 +18,6 @@ export const tagolmenu = () => {
       header.style.height = `0px`;
       return;
     }
-    console.log(tog);
   });
   window.addEventListener(
     "resize",

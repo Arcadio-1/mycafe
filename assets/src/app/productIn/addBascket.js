@@ -26,9 +26,11 @@ export const addbasket = (prod) => {
 };
 
 export const rendercard = () => {
+  const list = getLocalStorge();
+
   const basketConatiner = document.querySelector(".show-basket");
   basketConatiner.innerHTML = `<div class="sh-b-up">
-        <p><span class="sh-b-up-num">4</span><span> کالا </span></p>
+        <p><span class="sh-b-up-num">${list.length}</span><span> کالا </span></p>
         <a class="sh-b-up-go" href="./order.html">مشاهده سبد خرید</a>
       </div>
       <div class="sh-b-mid"></div>
@@ -45,18 +47,15 @@ export const rendercard = () => {
           >
         </div>
       </div>`;
-  const numOfProdInCard = document.querySelector(".sh-b-up-num");
   const totalPrice = document.querySelector(".sh-b-totalPrice");
   let total = 0;
-  const list = getLocalStorge();
   const numOfprodInNav = document.querySelector(".order-num");
   numOfprodInNav.textContent = list.length;
-  numOfProdInCard.textContent = list.length;
   const cardContainer = document.querySelector(".sh-b-mid");
   cardContainer.innerHTML = ``;
   list.map((item) => {
     total += item.number * (item.price - (item.offPersent / 100) * item.price);
-    console.log(total, item.number, item.offPersent, item.price);
+    // console.log(total, item.number, item.offPersent, item.price);
     const createArtical = document.createElement("article");
     createArtical.innerHTML = `
               <article>
@@ -91,7 +90,7 @@ export const rendercard = () => {
               <p class="sh-b-mid-title">${item.title}</p>
               <p class="sh-b-mid-moadel"><i class="fa-solid fa-box-archive"></i>بسته ${
                 item.wight
-              }</p>
+              } گرمی</p>
               <p class="sh-b-mid-avalble"> <i class="fa-solid fa-cubes"></i>${
                 item.sell == "special" ? "موجود در انبار" : "نا موجود"
               }</p>
@@ -160,7 +159,7 @@ const creatItem = (prod) => {
   return product;
 };
 
-const deleteprod = (key) => {
+export const deleteprod = (key) => {
   let list = getLocalStorge();
   list = list.filter((item) => {
     if (item.id !== key) {

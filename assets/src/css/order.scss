@@ -159,6 +159,7 @@ button {
 .order-total {
   width: 100%;
   max-width: 400px;
+  margin-bottom: auto;
 }
 .order-list-item-delete button {
   cursor: pointer;
@@ -246,4 +247,11 @@ button {
   background-size: cover;
   background-image: url("../image/icon/order-page-icons/card.svg");
   margin-left: 0.5rem;
+}
+.order-total-submit-orderList-btn {
+  color: white;
+  background-color: royalblue;
+  // width: 50%;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
 }

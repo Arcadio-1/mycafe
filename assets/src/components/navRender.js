@@ -35,21 +35,12 @@ export const navRender = async () => {
             <button id="hamberger-menu"><i class="fas fa-bars"></i></button>
           </div>
   `;
-  console.log("1");
-  // const menuBtn = document.getElementById("menu");
-  // console.dir(menuBtn);
-  // tagolmenu();
-  // navfix();
-  // showbasket();
-
   const navLinkCunt = document.querySelector(".nav2-ul");
-  ////
   const getnavLinksJson = async () => {
     const fetchNavLinks = await fetch("./assets/src/json/navLink.json");
     const data = await fetchNavLinks.json();
     return data;
   };
-  // console.log(getnavLinksJson);
   const links = await getnavLinksJson();
   links.map((item) => {
     const creatLi = document.createElement("li");
