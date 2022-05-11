@@ -1,17 +1,21 @@
-import { addbasket } from "./productIn/addBascket";
+import { Toast } from "bootstrap";
 import { getLocalStorge } from "./productIn/addBascket";
 import { deleteprod } from "./productIn/addBascket";
 
 const renderOrderList = () => {
   const list = getLocalStorge();
+  const totalamount = document.getElementById("order-list-number");
+  totalamount.textContent = ` (${list.length}) `;
   const orderListContainer = document.querySelector(".order-list-container");
+  orderListContainer.innerHTML = ``;
   let total = 0;
   let totalWithOutDiscount = 0;
-  const OrderItemHTML = list.map((item) => {
+  list.map((item) => {
     totalWithOutDiscount += item.number * item.price;
     total += item.number * (item.price - (item.offPersent / 100) * item.price);
     const creatDiv = document.createElement("div");
     creatDiv.classList.add("order-list-item");
+    creatDiv.dataset.id = item.id;
     creatDiv.innerHTML = `<img
                   class="order-list-item-img"
                   src="${item.imageLink}"
@@ -25,7 +29,9 @@ const renderOrderList = () => {
                     <div class="order-list-item-detail">
                       <div class="oreder-list-item-details-Weight">
                         <label for="details-Weight">وزن :</label>
-                        <select name="details-Weight" id="">
+                        <select name="details-Weight" class="details-weight" data-id="${
+                          item.id
+                        }">
                           <option value="250" ${
                             item.wight == 250 && `selected ="selected"`
                           }">250 گرم</option>
@@ -39,7 +45,9 @@ const renderOrderList = () => {
                       </div>
                       <div class="oreder-list-item-details-grind">
                         <label for="details-grind">آسیاب :</label>
-                        <select name="details-grindt" id="">
+                        <select name="details-grind" class="details-grind" data-id="${
+                          item.id
+                        }">
                           <option value="asyab-0" ${
                             item.asyabValue == "asyab-0" &&
                             `selected ="selected"`
@@ -90,7 +98,9 @@ const renderOrderList = () => {
                         <label for="quantity-num">تعداد :</label>
                         <div class="quantity-intro">
                           <div class="btn-r">
-                            <input type="button" class="butt" id="btn-plus" />
+                            <input type="button" class="butt btn-plus" id="" data-id="${
+                              item.id
+                            }" />
                           </div>
                           <div class="btn-m">
                             <input
@@ -105,7 +115,9 @@ const renderOrderList = () => {
                             />
                           </div>
                           <div class="btn-l">
-                            <input type="button" class="butt" id="btn-minus" />
+                            <input type="button" class="butt btn-minus" id="" data-id="${
+                              item.id
+                            }" />
                           </div>
                         </div>
                       </div>
@@ -148,17 +160,7 @@ const renderOrderList = () => {
                   </div>
                 </div>
         `;
-    creatDiv
-      ////creat delete btn
-      .querySelector(".delete-prod-orderList-btn")
-      .addEventListener("click", (e) => {
-        const key = e.target.dataset.keyid;
-        console.log(`${key} is deleted`);
-        deleteprod(key);
-        orderListContainer.innerHTML = ``;
-        renderOrderList();
-      });
-
+    addListeners(creatDiv);
     orderListContainer.appendChild(creatDiv);
     //creat order-total
     const orderTotalContainer = document.querySelector(
@@ -200,5 +202,76 @@ const renderOrderList = () => {
                 ادامه جهت تسویه حساب
               </button>`;
   });
+};
+
+const addListeners = (creatDiv) => {
+  const plusNumBtn = creatDiv.querySelector(".btn-plus");
+  const minNumBtn = creatDiv.querySelector(".btn-minus");
+  const Weight = creatDiv.querySelector(".details-weight");
+  const grind = creatDiv.querySelector(".details-grind");
+  const deleteBtn = creatDiv.querySelector(".delete-prod-orderList-btn");
+  Weight.addEventListener("change", (e) => {
+    console.log(Weight.options[Weight.selectedIndex].value);
+    creatObject(e);
+  });
+  grind.addEventListener("change", (e) => {
+    creatObject(e);
+  });
+  plusNumBtn.addEventListener("click", (e) => {
+    const quant =
+      e.target.parentElement.parentElement.querySelector(".quantity-num");
+    if (quant.value < 10 && quant.value >= 1) {
+      quant.value++;
+      creatObject(e);
+    } else quant.value = 10;
+  });
+  minNumBtn.addEventListener("click", (e) => {
+    const quant =
+      e.target.parentElement.parentElement.querySelector(".quantity-num");
+    if (quant.value > 1 && quant.value < 11) {
+      quant.value--;
+      creatObject(e);
+    } else {
+      quant.value = 1;
+    }
+  });
+  deleteBtn.addEventListener("click", (e) => {
+    const key = e.target.dataset.keyid;
+    console.log(`${key} is deleted`);
+    deleteprod(key);
+    renderOrderList();
+  });
+};
+
+const editList = (itemData) => {
+  const list = getLocalStorge();
+  list.map((item) => {
+    if (item.id == itemData.id) {
+      item.number = itemData.number;
+      item.wight = itemData.wight;
+      item.asyabText = itemData.asyabText;
+      item.asyabValue = itemData.asyabValue;
+    }
+  });
+  const prodTarget = JSON.stringify(list);
+  localStorage.setItem("list", prodTarget);
+  renderOrderList();
+};
+
+const creatObject = (e) => {
+  const idIs = e.currentTarget.dataset.id;
+  const elementIs = document.querySelector(
+    `.order-list-item[data-id="${idIs}"]`
+  );
+  const Weight = elementIs.querySelector(".details-weight");
+  const asyabTextt = elementIs.querySelector(".details-grind");
+  const itemData = {
+    id: elementIs.dataset.id,
+    wight: Weight.options[Weight.selectedIndex].value,
+    number: elementIs.querySelector(".quantity-num").value,
+    asyabText: asyabTextt.options[asyabTextt.selectedIndex].text,
+    asyabValue: asyabTextt.options[asyabTextt.selectedIndex].value,
+  };
+  editList(itemData);
 };
 renderOrderList();

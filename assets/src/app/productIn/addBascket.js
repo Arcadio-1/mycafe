@@ -115,13 +115,13 @@ export const rendercard = () => {
             }"></button>
             </article>
     `;
-    cardContainer.appendChild(createArtical);
     const deleteBtn = createArtical.querySelector(".delete-prod-frombsket-btn");
     deleteBtn.addEventListener("click", (e) => {
       const key = e.target.dataset.keyid;
       console.log(`${key} is deleted`);
       deleteprod(key);
     });
+    cardContainer.appendChild(createArtical);
   });
   totalPrice.textContent = new Intl.NumberFormat("en-US", {
     style: "decimal",
